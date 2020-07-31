@@ -1,0 +1,5 @@
+{
+    "watch": ["insertData"],
+    "ext": "js",
+    "delay": "3"
+  }
