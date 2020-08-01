@@ -1,4 +1,6 @@
-// const mysql = require('mysql');
+const dotenv = require("dotenv");
+dotenv.config();
+
 const fs = require('fs');
 const getImages = require('./insertBricks/getImages');
 const prepereBrickData = require('./insertBricks/prepereBrickData');
@@ -26,7 +28,7 @@ legoSets.forEach(legotSetNumber => {
 
 
     const setsData = prepereSetsData(legoSetBrickModel[legotSetNumber], legotSetNumber)
-    console.log(setsData);
+    // console.log(setsData);
 
     connection.query(colorQuery, [colors], function (error, result) {
         if (error) throw error;
@@ -38,7 +40,7 @@ legoSets.forEach(legotSetNumber => {
             console.log('this.sql', this.sql); //command/query
             console.log(error);
         }
-        console.log(result);
+        // console.log(result);
     });
 
     connection.query(setQuery, [setData], function (error, result) {
@@ -46,7 +48,7 @@ legoSets.forEach(legotSetNumber => {
             console.log('this.sql', this.sql); //command/query
             console.log(error);
         }
-        console.log(result);
+        // console.log(result);
     });
 
 
