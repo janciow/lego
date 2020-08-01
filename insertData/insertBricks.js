@@ -1,15 +1,10 @@
-const mysql = require('mysql');
+// const mysql = require('mysql');
 const fs = require('fs');
 const getImages = require('./insertBricks/getImages');
 const prepereBrickData = require('./insertBricks/prepereBrickData');
 const prepereSetsData = require('./insertBricks/prepereSetsData');
+const connection = require('../db/db_connect');
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1qaz2wsx',
-    database: 'jan_db'
-});
 
 const colorQuery = "INSERT IGNORE INTO color_exact (id,name,color_family_id) VALUES ?"
 const brickQuery = "INSERT IGNORE INTO brick (color_exact_id, category, element_id, model_id, price, description, img_pathname) VALUES ?" //[ 49, 'Y910', 4144012, 3958, 2.29]
