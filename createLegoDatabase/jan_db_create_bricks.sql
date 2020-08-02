@@ -30,12 +30,12 @@ CREATE TABLE IF NOT EXISTS lego_sets(
   description VARCHAR(200)
 );
 CREATE TABLE IF NOT EXISTS lego_set_parts (
-  id_d INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  lego_set_id VARCHAR(20),
-  brick_id VARCHAR(16),
+  lego_set_id VARCHAR(20) NOT NULL,
+  brick_id VARCHAR(16) NOT NULL,
   quantity INT,
   FOREIGN KEY(lego_set_id) REFERENCES lego_sets(set_number),
-  FOREIGN KEY(brick_id) REFERENCES brick(element_id)
+  FOREIGN KEY(brick_id) REFERENCES brick(element_id),
+  PRIMARY KEY(lego_set_id, brick_id)
 );
 INSERT INTO color_family(name)
 VALUES ('Black'),
@@ -51,7 +51,3 @@ VALUES ('Black'),
   ('Warm Gold'),
   ('White'),
   ('Yellow');
-INSERT INTO lego_sets (set_number, name, description)
-VALUES ('10040', 'Black Seas Barracuda', ''),
-  ('6286', 'Skulls Eye Schooner', ''),
-  ('10210', 'Imperial Flagship', '');

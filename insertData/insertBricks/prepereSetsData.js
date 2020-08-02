@@ -19,9 +19,8 @@ const prepereSetsData = (legotElements, setNumber) => {
 
         brickSetData.push([
             +setNumber,
-            'Y910',
             '' + model_id + colorId,
-            legotElement.quantity
+            +legotElement.quantity
         ])
     });
 

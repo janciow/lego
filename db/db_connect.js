@@ -4,9 +4,6 @@ const MY_APP_SECRET = process.env.APP_SECRET;
 const MY_APP_USER= process.env.APP_USER;
 const MY_APP_DB_NAME= process.env.APP_DB_NAME;
 
-console.log(MY_PORT, MY_APP_SECRET);
-
-
 const connection = mysql.createConnection({
     host: 'localhost',
     user: MY_APP_USER,

@@ -11,6 +11,9 @@ const connection = require('../db/db_connect');
 const colorQuery = "INSERT IGNORE INTO color_exact (id,name,color_family_id) VALUES ?"
 const brickQuery = "INSERT IGNORE INTO brick (color_exact_id, category, element_id, model_id, price, description, img_pathname) VALUES ?" //[ 49, 'Y910', 4144012, 3958, 2.29]
 const setQuery = "INSERT IGNORE INTO lego_sets (set_number, name, description) VALUES ?"
+
+const set_parts_query = "INSERT IGNORE INTO lego_set_parts (lego_set_id, brick_id, quantity) VALUES ?"
+
 const legoSets = ['6286', '10040', '10210', '4195', '6243', '6274'];
 
 
@@ -22,13 +25,11 @@ legoSets.forEach(legotSetNumber => {
 
     let legoSetBrickModel = JSON.parse(fs.readFileSync(`${legotSetNumber}.json`));
 
-    const { colors, brickData } = prepereBrickData(legoSetBrickModel[legotSetNumber])
+    const { colors, brickData } = prepereBrickData(legoSetBrickModel[legotSetNumber]);
+    const setData = [[legoSetBrickModel["setNumber"], legoSetBrickModel["setTitle"], ""]];
+    const setPartData = prepereSetsData(legoSetBrickModel[legotSetNumber], legotSetNumber);
 
-    const setData = [[legoSetBrickModel["setNumber"], legoSetBrickModel["setTitle"], ""]]
-
-
-    const setsData = prepereSetsData(legoSetBrickModel[legotSetNumber], legotSetNumber)
-    // console.log(setsData);
+    console.log(setPartData);
 
     connection.query(colorQuery, [colors], function (error, result) {
         if (error) throw error;
@@ -48,7 +49,15 @@ legoSets.forEach(legotSetNumber => {
             console.log('this.sql', this.sql); //command/query
             console.log(error);
         }
-        // console.log(result);
+        console.log(result);
+    });
+
+    connection.query(set_parts_query, [setPartData], function (error, result) {
+        if (error) {
+            console.log('this.sql', this.sql); //command/query
+            console.log(error);
+        }
+        console.log(result);
     });
 
 
