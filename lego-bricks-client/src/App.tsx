@@ -1,15 +1,16 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
+import Layout from './hoc/Layout/Layout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        lego app
-      </header>
+      <Layout>
 
-      <main>
+
+
+
         <Router>
           <Switch>
             <Route path="/checkout" > <div>1</div></Route>
@@ -17,7 +18,9 @@ function App() {
             <Route path="/" exact >  <div>1</div></Route>
           </Switch>
         </Router>
-      </main>
+
+
+      </Layout>
     </div>
   );
 }
