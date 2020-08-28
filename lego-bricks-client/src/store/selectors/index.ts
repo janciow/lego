@@ -1,4 +1,5 @@
 export {
     selectSetsList,
-    selectSetdetails
+    selectSetdetails,
+    selectSetsBricks
 } from './sets';

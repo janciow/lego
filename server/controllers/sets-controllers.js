@@ -31,6 +31,20 @@ const getSetById = (req, res) => {
     });
 }
 
+const getSetBricksById = (req, res) => {
+    const sortBy = req.query.sortBy || '';
+    const sortDir = req.query.sortDir || 'ASC';
+    const setNumber = req.params.setNumber;
+
+    const q = "SELECT * FROM lego_set_parts LEFT JOIN brick ON lego_set_parts.brick_id = brick.element_id WHERE lego_set_parts.lego_set_id = ? ORDER BY brick.description";
+    connection.query(q, [setNumber], function (error, results) {
+        if (error) throw error;
+        const setBricks = results;
+        res.status(200);
+        res.json({ items: setBricks });
+    });
+}
+
 const createLegoSet = async (req, res, next) => {
 
     const { setNumber, name, description } = req.body;
@@ -46,4 +60,5 @@ const createLegoSet = async (req, res, next) => {
 exports.getBrickCount = getBrickCount;
 exports.getSets = getSets;
 exports.getSetById = getSetById;
+exports.getSetBricksById = getSetBricksById;
 exports.createLegoSet = createLegoSet;

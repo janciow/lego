@@ -46,7 +46,7 @@ class SetList extends React.Component<SetListProps & SetListDispatchProps & Rout
                         {
                             sets.map(({ set_number, name, description }, index) => {
                                 return (
-                                    <tr key={set_number} onClick={this.goToSet.bind(this, set_number)}>
+                                    <tr key={set_number} onClick={this.goToSet.bind(this, set_number)} className="cursor-pointer">
                                         <td>{index + 1}</td>
                                         <td>{set_number}</td>
                                         <td>{name}</td>

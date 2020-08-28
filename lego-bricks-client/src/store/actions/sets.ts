@@ -37,15 +37,35 @@ export const getLegoSetDetailsFailed = () => {
     };
 };
 
-
 export const getLegoSetDetails = (legoSetId: string) => {
     return dispatch => {
         setApi.fetchSetById(legoSetId).then(response => {
-            console.log(response);
-            
-            dispatch(getLegoSetDetailsSuccess(response.data.items));
+            dispatch(getLegoSetDetailsSuccess(response.data.data[0]));
         }).catch(error => {
             dispatch(getLegoSetDetailsFailed());
+        })
+    }
+};
+
+export const getSetBricksBySetIdSuccess = (setBricks) => {
+    return {
+        type: ActionTypes.SET_BRICKS_LIST_GET,
+        setBricks
+    };
+};
+
+export const getSetBricksBySetIdFailed = () => {
+    return {
+        type: ActionTypes.SET_BRICKS_LIST_GET_FAIL,
+    };
+};
+
+export const getSetBricksBySetId = (legoSetId: string) => {
+    return dispatch => {
+        setApi.fetchSetBricksBySetId(legoSetId).then(response => {
+            dispatch(getSetBricksBySetIdSuccess(response.data.items));
+        }).catch(error => {
+            dispatch(getSetBricksBySetIdFailed());
         })
     }
 };
