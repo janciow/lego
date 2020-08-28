@@ -1,9 +1,9 @@
 import api from ".";
 
-export const getSetList = () => {
+export const fetchSetsList = () => {
     return api.get(`sets`)
-        .then(res => {
-            console.log(res);
-            console.log(res.data);
-        })
+}
+
+export const fetchSetById = (setId: string) => {
+    return api.get(`sets/${setId}`)
 }
