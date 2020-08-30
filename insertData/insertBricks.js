@@ -21,7 +21,7 @@ const legoSets = ['6286', '10040', '10210', '4195', '6243', '6274'];
 
 legoSets.forEach(legotSetNumber => {
 
-    // getImages(legotSetNumber);
+    getImages(legotSetNumber);
 
     let legoSetBrickModel = JSON.parse(fs.readFileSync(`${legotSetNumber}.json`));
 
