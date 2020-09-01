@@ -2,6 +2,7 @@ use jan_db;
 SELECT img_pathname,
 	price,
 	model_id,
+    element_id,
 	s6286.quantity as set_6286_q,
 	s10040.quantity as set_10040_q,
 	s10210.quantity as set_10210_q,
@@ -82,11 +83,11 @@ WHERE (
 		or s6274.quantity IS NOT NULL
 	)
 	and (
-		s6286.lego_set_id = "6274"
-		or s10040.lego_set_id = "6274"
-		or s10210.lego_set_id = "6274"
-		or s4195.lego_set_id = "6274"
-		or s6243.lego_set_id = "6274"
-		or s6274.lego_set_id = "6274"
+		s6286.lego_set_id = "10210"
+		or s10040.lego_set_id = "10210"
+		or s10210.lego_set_id = "10210"
+		or s4195.lego_set_id = "10210"
+		or s6243.lego_set_id = "10210"
+		or s6274.lego_set_id = "10210"
 	)
     ORDER BY brick.description;

@@ -9,6 +9,7 @@ interface BrickBalanceLegoPiratesShip {
     img_pathname: string;
     price: number;
     model_id: string;
+    element_id: string;
     set_6286_q: null | number;
     set_10040_q: null | number;
     set_10210_q: null | number;
@@ -48,12 +49,14 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                             
                             <th>img_pathname</th>
                             <th>model_id</th>
-                            <th>set_6286_q</th>
-                            <th>set_10040_q</th>
-                            <th>set_10210_q</th>
-                            <th>set_4195_q</th>
-                            <th>t_6274_q</th>
                             <th>set_6274_q</th>
+                            <th>set_10040_q</th>
+                            <th>set_6286_q</th>
+                            <th>set_10210_q</th>
+                            <th>set_6243_q</th>                           
+                            <th>set_4195_q</th>
+                            
+                           
                             <th>total_q</th>
                             <th>description</th>
 
@@ -61,18 +64,18 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                     </thead>
                     <tbody>
                         {
-                            legoPiratesShipBrickList.map(({ model_id, set_6286_q, set_10040_q, total_q, img_pathname, description, set_10210_q, set_4195_q, set_6274_q, set_6243_q }, index) => {
+                            legoPiratesShipBrickList.map(({ model_id, set_6286_q, set_10040_q, total_q, img_pathname, description, set_10210_q, set_4195_q, set_6274_q, set_6243_q, element_id }, index) => {
                                 return (
-                                    <tr key={model_id} className="cursor-pointer">
+                                    <tr key={element_id} className="cursor-pointer">
                                       
                                         <td><img src={`/img/${img_pathname}`} alt={'ddd'}></img></td>
                                         <td>{model_id}</td>
-                                        <td>{set_6286_q}</td>
-                                        <td>{set_10040_q}</td>
-                                        <td>{set_10210_q}</td>
-                                        <td>{set_4195_q}</td>
-                                        <td>{set_6243_q}</td>
                                         <td>{set_6274_q}</td>
+                                        <td>{set_10040_q}</td>
+                                        <td>{set_6286_q}</td>
+                                        <td>{set_10210_q}</td>
+                                        <td>{set_6243_q}</td>
+                                        <td>{set_4195_q}</td>
                                         <td>{total_q}</td>
                                         <td>{description}</td>
                                     </tr>
