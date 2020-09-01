@@ -13,7 +13,7 @@ const LeftSideNavigation = () => {
                     </li>
 
                     <li className="nav-item">
-                        <NavLink  className="nav-link" activeClassName="active" to="/all-bricks">
+                        <NavLink  className="nav-link" activeClassName="active" to="/brick-balance">
                             <span data-feather="file"></span> Brick inventory
                         </NavLink  >
                     </li>
