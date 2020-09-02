@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS brick(
   price DECIMAL(8, 2),
   description VARCHAR(200),
   img_pathname VARCHAR(200),
+  quantity_free_bricks INT,
+  quantity_total INT,
   FOREIGN KEY(color_exact_id) REFERENCES color_exact(id)
 );
 CREATE TABLE IF NOT EXISTS lego_sets(
@@ -33,6 +35,7 @@ CREATE TABLE IF NOT EXISTS lego_set_parts (
   lego_set_id VARCHAR(20) NOT NULL,
   brick_id VARCHAR(16) NOT NULL,
   quantity INT,
+  quantity_in_set INT,
   FOREIGN KEY(lego_set_id) REFERENCES lego_sets(set_number),
   FOREIGN KEY(brick_id) REFERENCES brick(element_id),
   PRIMARY KEY(lego_set_id, brick_id)
