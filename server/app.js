@@ -21,6 +21,7 @@ app.use(express.static(__dirname + "/public"));
 
 const setsRoutes = require('./routes/sets-routes');
 const brickBalanceRoutes = require('./routes/brick-balance-routes');
+const bricksRoutes = require('./routes/bricks-routes');
 
 app.get("/api", (req, res) => {
     res.status(200);
@@ -29,6 +30,7 @@ app.get("/api", (req, res) => {
 
 app.use('/api/sets', setsRoutes);
 app.use('/api/brick-balance', brickBalanceRoutes);
+app.use('/api/bricks', bricksRoutes);
 
 app.listen(8080, function () {
     console.log("Server running on 8080!");
