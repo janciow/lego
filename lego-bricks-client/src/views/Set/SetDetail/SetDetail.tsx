@@ -6,6 +6,8 @@ import { withRouter, RouteComponentProps } from 'react-router-dom'
 import * as actions from '../../../store/actions/index';
 import * as selectors from '../../../store/selectors/index';
 import LegoSet from '../LegoSet.model';
+import { WithRefTest } from '../../../components/RefTest/WithRefTest';
+
 
 interface SetDetailsProps {
     set: LegoSet,
@@ -60,7 +62,9 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
                             })
                         }
                     </tbody>
+                   
                 </table>
+                <WithRefTest />
             </div>
         </>
     }

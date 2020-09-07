@@ -39,10 +39,21 @@ const createLegoBrick = async (req, res, next) => {
         res.status(200);
         res.json({ data: result });
     });
+}
 
+const updatLegoBrickQuantity = async (req, res, next) => {
+    const { elementId } = req.params;   
+    const { quantityFreeBricks, quantityTotal } = req.body;
+    const setData = [[quantityFreeBricks], [quantityTotal], [elementId]]
+    const setQuery = "UPDATE  brick  SET quantity_free_bricks = ?, quantity_total = ? WHERE element_id = ?";
+    connection.query(setQuery, setData, function (error, result) {
+        res.status(200);
+        res.json({ message: result.message });
+    });
 }
 
 exports.getBrickCount = getBrickCount;
 exports.getBricks = getBricks;
 exports.getBrickById = getBrickById;
 exports.createLegoBrick = createLegoBrick;
+exports.updatLegoBrickQuantity = updatLegoBrickQuantity;
