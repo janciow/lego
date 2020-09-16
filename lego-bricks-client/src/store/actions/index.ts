@@ -6,3 +6,6 @@ export {
 export {
     getLegoPiratesShipBrickListById,
 } from './brick-balance';
+export {
+    updatLegoBrickTotalQuantity,
+} from './bricks';

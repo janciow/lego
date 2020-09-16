@@ -39,7 +39,6 @@ class SetList extends React.Component<SetListProps & SetListDispatchProps & Rout
                             <th>set_number</th>
                             <th>name</th>
                             <th>description</th>
-
                         </tr>
                     </thead>
                     <tbody>

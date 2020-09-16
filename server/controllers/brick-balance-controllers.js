@@ -36,6 +36,7 @@ const legoPiratesShipBrickList = (req, res) => {
 	price,
 	model_id,
 	element_id,
+	quantity_total,
 	s6286.quantity as set_6286_q,
 	s6285.quantity as set_6285_q,
 	s10210.quantity as set_10210_q,
