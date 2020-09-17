@@ -7,6 +7,7 @@ import * as actions from '../../../store/actions/index';
 import * as selectors from '../../../store/selectors/index';
 import LegoSet from '../LegoSet.model';
 import LegoSetPart from '../LegoSetPart.model';
+import classNames  from 'classnames';
 
 
 interface SetDetailsProps {
@@ -50,6 +51,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
                             <th>ilość</th>
                             <th>ilość przypisana</th>
                             <th>wszystkie klocki</th>
+                            <th>aktualizacja</th>
                             <th>opis</th>
                         </tr>
                     </thead>
@@ -57,14 +59,15 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
                         {
                             setBricks.map(({ element_id, brick_id, img_pathname, description, quantity, model_id, quantity_in_set, quantity_total }, index) => {
                                 return (
-                                    <tr key={brick_id} >
+                                    <tr key={brick_id} className={classNames( { 'table-success':  quantity !== null && quantity_total !== null && quantity_total >= quantity  })}>
                                         <td>{index + 1}</td>
                                         <td><img src={`/img/${img_pathname}`} alt={description}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>
                                         <td className="text-center align-middle">{quantity}</td>
                                         <td className="text-center align-middle">{quantity_in_set}</td>
+                                        <td className="text-center align-middle">{quantity_total}</td>
                                         <td className="align-middle">
-                                            <QuantityTableInput quantity_total={quantity_total} element_id={element_id} updateTotalValu={this.updateTotalValu}/>                                          
+                                            <QuantityTableInput  element_id={element_id} updateTotalValu={this.updateTotalValu}/>                                          
                                         </td>
                                         <td className="align-middle">{description}</td>
                                     </tr>

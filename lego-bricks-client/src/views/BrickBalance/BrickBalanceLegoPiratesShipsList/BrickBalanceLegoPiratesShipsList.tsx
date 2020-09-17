@@ -6,6 +6,7 @@ import QuantityTableInput from '../../../components/inputs/QuantityTableInput';
 import * as actions from '../../../store/actions/index';
 import * as selectors from '../../../store/selectors/index';
 import { BrickBalanceLegoPiratesShip } from '../types';
+import classNames  from 'classnames';
 
 interface BrickBalanceLegoPiratesShipsListProps {
     legoPiratesShipBrickList: BrickBalanceLegoPiratesShip[]
@@ -60,7 +61,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                             <th className="cursor-pointer" onClick={this.goToSet.bind(this, '4195')}>Queen</th>
                             <th className="cursor-pointer" onClick={this.goToSet.bind(this, '70413')}>Bounty</th>
 
-
+                            <th></th>
                             <th></th>
                             <th></th>
                             <th></th>
@@ -80,6 +81,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
 
                             <th>Suma potrzebnych do zestawów</th>
                             <th>Wszystkie klocki</th>
+                            <th>aktualizacja</th>
                             <th>Opis</th>
 
                         </tr>
@@ -88,7 +90,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                         {
                             legoPiratesShipBrickList.map(({ quantity_total, model_id, set_6286_q, set_6285_q, total_q, img_pathname, description, set_10210_q, set_4195_q, set_6274_q, set_6243_q, element_id, set_70413_q }) => {
                                 return (
-                                    <tr key={element_id} >
+                                    <tr key={element_id} className={classNames( { 'table-success':  quantity_total !== null && quantity_total >= total_q  })}>
 
                                         <td className="text-center align-middle"><img src={`/img/${img_pathname}`} alt={'ddd'}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>
@@ -100,13 +102,13 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                                         <td className="text-center align-middle">{set_4195_q}</td>
                                         <td className="text-center align-middle">{set_70413_q}</td>
                                         <td className="text-center align-middle">{total_q}</td>
+                                        <td className="text-center align-middle">{quantity_total}</td>
                                         <td className="text-center align-middle">
-                                            <QuantityTableInput 
-                                            quantity_total={quantity_total} 
-                                            element_id={element_id} 
-                                            updateTotalValu={this.updateTotalValu}
-                                            />  
-                                             </td>
+                                            <QuantityTableInput
+                                                element_id={element_id}
+                                                updateTotalValu={this.updateTotalValu}
+                                            />
+                                        </td>
                                         <td className="align-middle">{description}</td>
                                     </tr>
                                 )
