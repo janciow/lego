@@ -24,7 +24,7 @@ const createLegoSetJson = function (url, setNumber) {
                 "setNumber" : "${setNumber}",
                 "setTitle" : "${setTitle}"
             }`;
-            fs.writeFileSync(`${setNumber}.json`, data);
+            fs.writeFileSync(`jsons_lego/jsons_lego_temp/${setNumber}.json`, data);
         })
         .catch(function (err) {
             //handle error

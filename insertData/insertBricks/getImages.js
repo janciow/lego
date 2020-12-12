@@ -2,7 +2,7 @@ const fs = require('fs');
 const download = require('./download');
 
 const getImages = function (setNumber) {
-    let rawdata = fs.readFileSync(`${setNumber}.json`);
+    let rawdata = fs.readFileSync(`jsons_lego/${setNumber}.json`);
     let legoSet = JSON.parse(rawdata);
     const dir = './img';
     if (!fs.existsSync(dir)) {
