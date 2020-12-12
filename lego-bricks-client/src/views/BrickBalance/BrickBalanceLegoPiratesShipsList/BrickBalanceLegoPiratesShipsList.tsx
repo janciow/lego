@@ -45,7 +45,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
         const { legoPiratesShipBrickList } = this.props
 
         return <>
-            <h2>Lista klockow </h2>
+            <h2>Lista klocków</h2>
             <div className="table-responsive">
                 <table className="table table-striped table-sm table-bordered">
                     <thead>

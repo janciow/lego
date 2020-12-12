@@ -49,7 +49,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
                             <th>obrazek</th>
                             <th>model_id</th>
                             <th>ilość</th>
-                            <th>ilość przypisana</th>
+                            <th>ilość (build in)</th>
                             <th>wszystkie klocki</th>
                             <th>aktualizacja</th>
                             <th>opis</th>
@@ -61,7 +61,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
                                 return (
                                     <tr key={brick_id} className={classNames( { 'table-success':  quantity !== null && quantity_total !== null && quantity_total >= quantity  })}>
                                         <td>{index + 1}</td>
-                                        <td><img src={`/img/${img_pathname}`} alt={description}></img></td>
+                                        <td><img src={`/img/${img_pathname}`} alt={model_id?.toString() || ''}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>
                                         <td className="text-center align-middle">{quantity}</td>
                                         <td className="text-center align-middle">{quantity_in_set}</td>

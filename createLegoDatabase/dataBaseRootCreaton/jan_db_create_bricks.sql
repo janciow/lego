@@ -1,3 +1,4 @@
+CREATE DATABASE  IF NOT EXISTS jan_db;
 use jan_db;
 DROP TABLE IF EXISTS lego_set_parts;
 DROP TABLE IF EXISTS lego_sets;
