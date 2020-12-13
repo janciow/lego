@@ -23,6 +23,7 @@ export interface BrickBalanceLegoStarWarsClonShips {
     element_id: string;
     set_7675_q: null | number;
     set_7676_q: null | number;
+    set_10195_q: null | number;
     total_q: number;
     quantity_total: number | null;
     lego_set_id: string;

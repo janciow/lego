@@ -54,7 +54,8 @@ class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalance
                             <th></th>
                             <th></th>
                             <th className="cursor-pointer" onClick={this.goToSet.bind(this, '7675')}>AT-TE Walker</th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '7676')}>Republic Attack Gunship</th>      
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '7676')}>Republic Attack Gunship</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '10195')}>Republic Dropship with AT-OT</th>       
 
                             <th></th>
                             <th></th>
@@ -68,6 +69,7 @@ class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalance
                             <th>model_id</th>
                             <th>set_7675_q</th>
                             <th>set_7676_q</th>
+                            <th>set_10195_q</th>
               
                             <th>Suma potrzebnych do zestawów</th>
                             <th>Wszystkie klocki</th>
@@ -78,7 +80,7 @@ class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalance
                     </thead>
                     <tbody>
                         {
-                            legoStarWarsCloneShipBrickList.map(({ quantity_total, model_id, set_7675_q, set_7676_q, total_q, img_pathname, description, element_id }) => {
+                            legoStarWarsCloneShipBrickList.map(({ quantity_total, model_id, set_7675_q, set_7676_q, set_10195_q ,total_q, img_pathname, description, element_id }) => {
                                 return (
                                     <tr key={element_id} className={classNames( { 'table-success':  quantity_total !== null && quantity_total >= total_q  })}>
 
@@ -86,6 +88,7 @@ class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalance
                                         <td className="text-center align-middle">{model_id}</td>
                                         <td className="text-center align-middle">{set_7675_q}</td>
                                         <td className="text-center align-middle">{set_7676_q}</td>
+                                        <td className="text-center align-middle">{set_10195_q}</td>
                 
                                         <td className="text-center align-middle">{total_q}</td>
                                         <td className="text-center align-middle">{quantity_total}</td>

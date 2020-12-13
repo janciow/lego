@@ -27,7 +27,7 @@ class SetListSimple extends React.Component<SetListSimpleProps & SetListSimpleDi
 
     goToSet = (setNumber: string) => {
 
-        if (setNumber === '7676' || setNumber === '7675') {  
+        if (setNumber === '7676' || setNumber === '7675' || setNumber === '10195') {  
             this.props.history.push(`brick-balance/${setNumber}/sw`)
         } else {
             this.props.history.push(`brick-balance/${setNumber}/pirates`)
