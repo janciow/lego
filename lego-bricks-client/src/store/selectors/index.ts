@@ -4,5 +4,6 @@ export {
     selectSetsBricks
 } from './sets';
 export {
-    selectLegoPiratesShipBrickList
+    selectLegoPiratesShipBrickList,
+    selectLegoStarWarsClonesShipBrickList
 } from './brick-balance';

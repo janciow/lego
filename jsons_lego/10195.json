@@ -1,0 +1,1740 @@
+{ 
+                "10195": [
+  {
+    "quantity": "1",
+    "model_id": "10195stk01",
+    "description": "Sticker Sheet for Set 10195 - (85921/4546785) Catalog: Parts: Sticker Sheet",
+    "imgUrl": "https://img.bricklink.com/P/0/10195stk01.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "63965",
+    "description": "Black Bar   6L with Stop Ring Catalog: Parts: Bar",
+    "imgUrl": "https://img.bricklink.com/P/11/63965.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "52107",
+    "description": "Black Brick, Modified 1 x 2 with Studs on 2 Sides Catalog: Parts: Brick, Modified",
+    "imgUrl": "https://img.bricklink.com/P/11/52107.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "4589b",
+    "description": "Black Cone 1 x 1 with Top Groove Catalog: Parts: Cone",
+    "imgUrl": "https://img.bricklink.com/P/11/4589b.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "30364",
+    "description": "Black Hinge Brick 1 x 2 Locking with 1 Finger Vertical End Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/11/30364.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3938",
+    "description": "Black Hinge Brick 1 x 2 Top Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/11/3938.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "30389c",
+    "description": "Black Hinge Brick 2 x 2 Locking with 1 Finger Vertical and Axle Hole (x Shape) Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/11/30389c.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "30553",
+    "description": "Black Hinge Cylinder 1 x 2 Locking with 2 Fingers, 9 Teeth and Axle Hole on Ends with Slots Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/11/30553.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "44301",
+    "description": "Black Hinge Plate 1 x 2 Locking with 1 Finger On End (Undetermined Type) Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/11/44301.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "57539",
+    "description": "Black Hose, Flexible Ribbed with 8mm Ends, 19L Catalog: Parts: Hose",
+    "imgUrl": "https://img.bricklink.com/P/11/57539.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "64644",
+    "description": "Black Minifigure, Utensil Telescope Catalog: Parts: Minifigure, Utensil",
+    "imgUrl": "https://img.bricklink.com/P/11/64644.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "57899",
+    "description": "Black Minifigure, Weapon Gun, Blaster Long (SW) Catalog: Parts: Minifigure, Weapon",
+    "imgUrl": "https://img.bricklink.com/P/11/57899.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "58247",
+    "description": "Black Minifigure, Weapon Gun, Blaster Short (SW) Catalog: Parts: Minifigure, Weapon",
+    "imgUrl": "https://img.bricklink.com/P/11/58247.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "3036",
+    "description": "Black Plate 6 x 8 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/11/3036.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "6019",
+    "description": "Black Plate, Modified 1 x 1 with U Clip (Horizontal Grip) Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/11/6019.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "48336",
+    "description": "Black Plate, Modified 1 x 2 with Bar Handle on Side with Closed Ends Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/11/48336.jpg"
+  },
+  {
+    "quantity": "26",
+    "model_id": "2444",
+    "description": "Black Plate, Modified 2 x 2 with Pin Hole Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/11/2444.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "60474",
+    "description": "Black Plate, Round 4 x 4 with Hole Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/11/60474.jpg"
+  },
+  {
+    "quantity": "20",
+    "model_id": "3705",
+    "description": "Black Technic, Axle 4 Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/11/3705.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3706",
+    "description": "Black Technic, Axle 6 Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/11/3706.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "3708",
+    "description": "Black Technic, Axle 12 Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/11/3708.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "32184",
+    "description": "Black Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/11/32184.jpg"
+  },
+  {
+    "quantity": "28",
+    "model_id": "32000",
+    "description": "Black Technic, Brick 1 x 2 with Holes Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/11/32000.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "33299",
+    "description": "Black Technic, Liftarm 1 x 3 with 2 Axle Holes and Pin / Crank Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/11/33299.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "32316",
+    "description": "Black Technic, Liftarm 1 x 5 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/11/32316.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "60484",
+    "description": "Black Technic, Liftarm 3 x 3 T-Shape Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/11/60484.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "62462",
+    "description": "Black Technic, Pin Connector Round 2L with Slot (Pin Joiner Round) Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/11/62462.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "48496",
+    "description": "Black Technic, Pin Connector Toggle Joint Smooth Double with 2 Pins Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/11/48496.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "6628",
+    "description": "Black Technic, Pin with Friction Ridges Lengthwise and Tow Ball Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/11/6628.jpg"
+  },
+  {
+    "quantity": "63",
+    "model_id": "2780",
+    "description": "Black Technic, Pin with Friction Ridges Lengthwise, Staggered, with or without Center Slots Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/11/2780.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "2744",
+    "description": "Black Technic, Slope 33 6 x 1 x 1 2/3 Long (Wing Back) Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/11/2744.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3068b",
+    "description": "Black Tile 2 x 2 with Groove Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/11/3068b.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "2412b",
+    "description": "Black Tile, Modified 1 x 2 Grille with Bottom Groove / Lip Catalog: Parts: Tile, Modified",
+    "imgUrl": "https://img.bricklink.com/P/11/2412b.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "2432",
+    "description": "Black Tile, Modified 1 x 2 with Bar Handle Catalog: Parts: Tile, Modified",
+    "imgUrl": "https://img.bricklink.com/P/11/2432.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3941",
+    "description": "Blue Brick, Round 2 x 2 with Axle Hole Catalog: Parts: Brick, Round",
+    "imgUrl": "https://img.bricklink.com/P/7/3941.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "x89",
+    "description": "Blue Rubber Belt Large (Round Cross Section) - Approx. 4 x 4 Catalog: Parts: Rubber Band & Belt",
+    "imgUrl": "https://img.bricklink.com/P/7/x89.jpg"
+  },
+  {
+    "quantity": "33",
+    "model_id": "43093",
+    "description": "Blue Technic, Axle Pin with Friction Ridges Lengthwise Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/7/43093.jpg"
+  },
+  {
+    "quantity": "21",
+    "model_id": "4274",
+    "description": "Blue Technic, Pin 1/2 Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/7/4274.jpg"
+  },
+  {
+    "quantity": "33",
+    "model_id": "6558",
+    "description": "Blue Technic, Pin 3L with Friction Ridges Lengthwise Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/7/6558.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "3010",
+    "description": "Dark Blue Brick 1 x 4 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/63/3010.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "2357",
+    "description": "Dark Blue Brick 2 x 2 Corner Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/63/2357.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "3001",
+    "description": "Dark Blue Brick 2 x 4 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/63/3001.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3023",
+    "description": "Dark Blue Plate 1 x 2 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/63/3023.jpg"
+  },
+  {
+    "quantity": "28",
+    "model_id": "3710",
+    "description": "Dark Blue Plate 1 x 4 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/63/3710.jpg"
+  },
+  {
+    "quantity": "20",
+    "model_id": "2420",
+    "description": "Dark Blue Plate 2 x 2 Corner Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/63/2420.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "3021",
+    "description": "Dark Blue Plate 2 x 3 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/63/3021.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "54200",
+    "description": "Dark Blue Slope 30 1 x 1 x 2/3 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/63/54200.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "3039",
+    "description": "Dark Blue Slope 45 2 x 2 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/63/3039.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "3045",
+    "description": "Dark Blue Slope 45 2 x 2 Double Convex Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/63/3045.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4871",
+    "description": "Dark Blue Slope, Inverted 45 4 x 2 Double Catalog: Parts: Slope, Inverted",
+    "imgUrl": "https://img.bricklink.com/P/63/4871.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3069b",
+    "description": "Dark Blue Tile 1 x 2 with Groove Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/63/3069b.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "6636",
+    "description": "Dark Blue Tile 1 x 6 Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/63/6636.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "47759",
+    "description": "Dark Blue Wedge 2 x 4 Triple Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/63/47759.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "43710",
+    "description": "Dark Blue Wedge 4 x 2 Triple Left Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/63/43710.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "43711",
+    "description": "Dark Blue Wedge 4 x 2 Triple Right Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/63/43711.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "47753",
+    "description": "Dark Blue Wedge 4 x 4 No Studs Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/63/47753.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "2450",
+    "description": "Dark Blue Wedge, Plate 3 x 3 Cut Corner Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/63/2450.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "60208",
+    "description": "Dark Blue Wheel 31mm D. x 15mm Technic Catalog: Parts: Wheel",
+    "imgUrl": "https://img.bricklink.com/P/63/60208.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "2456",
+    "description": "Dark Bluish Gray Brick 2 x 6 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/85/2456.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "30136",
+    "description": "Dark Bluish Gray Brick, Modified 1 x 2 Log Catalog: Parts: Brick, Modified",
+    "imgUrl": "https://img.bricklink.com/P/85/30136.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "6232",
+    "description": "Dark Bluish Gray Brick, Modified 2 x 2 with Pin and Axle Hole Catalog: Parts: Brick, Modified",
+    "imgUrl": "https://img.bricklink.com/P/85/6232.jpg"
+  },
+  {
+    "quantity": "28",
+    "model_id": "3062b",
+    "description": "Dark Bluish Gray Brick, Round 1 x 1 Open Stud Catalog: Parts: Brick, Round",
+    "imgUrl": "https://img.bricklink.com/P/85/3062b.jpg"
+  },
+  {
+    "quantity": "12",
+    "model_id": "6222",
+    "description": "Dark Bluish Gray Brick, Round 4 x 4 with 4 Side Pin Holes and Center Axle Hole Catalog: Parts: Brick, Round",
+    "imgUrl": "https://img.bricklink.com/P/85/6222.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4742",
+    "description": "Dark Bluish Gray Cone 4 x 4 x 2 Hollow No Studs Catalog: Parts: Cone",
+    "imgUrl": "https://img.bricklink.com/P/85/4742.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3961",
+    "description": "Dark Bluish Gray Dish 8 x 8 Inverted (Radar) - Solid Studs Catalog: Parts: Dish",
+    "imgUrl": "https://img.bricklink.com/P/85/3961.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "47973",
+    "description": "Dark Bluish Gray Hinge 1 x 3 with Two Pins, Locking 1 Finger Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/85/47973.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "30383",
+    "description": "Dark Bluish Gray Hinge Plate 1 x 2 Locking with 1 Finger On Top Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/85/30383.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "30413",
+    "description": "Dark Bluish Gray Panel 1 x 4 x 1 Catalog: Parts: Panel",
+    "imgUrl": "https://img.bricklink.com/P/85/30413.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3623",
+    "description": "Dark Bluish Gray Plate 1 x 3 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/85/3623.jpg"
+  },
+  {
+    "quantity": "11",
+    "model_id": "3460",
+    "description": "Dark Bluish Gray Plate 1 x 8 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/85/3460.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3022",
+    "description": "Dark Bluish Gray Plate 2 x 2 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/85/3022.jpg"
+  },
+  {
+    "quantity": "13",
+    "model_id": "3020",
+    "description": "Dark Bluish Gray Plate 2 x 4 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/85/3020.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "4282",
+    "description": "Dark Bluish Gray Plate 2 x 16 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/85/4282.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "3030",
+    "description": "Dark Bluish Gray Plate 4 x 10 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/85/3030.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4081b",
+    "description": "Dark Bluish Gray Plate, Modified 1 x 1 with Light Attachment - Thick Ring Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/85/4081b.jpg"
+  },
+  {
+    "quantity": "34",
+    "model_id": "2654",
+    "description": "Dark Bluish Gray Plate, Round 2 x 2 with Rounded Bottom (Boat Stud) Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/85/2654.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "30357",
+    "description": "Dark Bluish Gray Plate, Round Corner 3 x 3 Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/85/30357.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "4286",
+    "description": "Dark Bluish Gray Slope 33 3 x 1 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/85/4286.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3040",
+    "description": "Dark Bluish Gray Slope 45 2 x 1 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/85/3040.jpg"
+  },
+  {
+    "quantity": "37",
+    "model_id": "3039",
+    "description": "Dark Bluish Gray Slope 45 2 x 2 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/85/3039.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "3678b",
+    "description": "Dark Bluish Gray Slope 65 2 x 2 x 2 with Bottom Tube Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/85/3678b.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "54091",
+    "description": "Dark Bluish Gray Slope, Curved 8 x 8 x 2 Inverted Double Catalog: Parts: Slope, Curved",
+    "imgUrl": "https://img.bricklink.com/P/85/54091.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "4287",
+    "description": "Dark Bluish Gray Slope, Inverted 33 3 x 1 Catalog: Parts: Slope, Inverted",
+    "imgUrl": "https://img.bricklink.com/P/85/4287.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3665",
+    "description": "Dark Bluish Gray Slope, Inverted 45 2 x 1 Catalog: Parts: Slope, Inverted",
+    "imgUrl": "https://img.bricklink.com/P/85/3665.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "3660",
+    "description": "Dark Bluish Gray Slope, Inverted 45 2 x 2 Catalog: Parts: Slope, Inverted",
+    "imgUrl": "https://img.bricklink.com/P/85/3660.jpg"
+  },
+  {
+    "quantity": "30",
+    "model_id": "6587",
+    "description": "Dark Bluish Gray Technic, Axle 3 with Stud Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/85/6587.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "55013",
+    "description": "Dark Bluish Gray Technic, Axle 8 with Stop Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/85/55013.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "32209",
+    "description": "Dark Bluish Gray Technic, Axle 5.5 with Stop Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/85/32209.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "42003",
+    "description": "Dark Bluish Gray Technic, Axle and Pin Connector Perpendicular 3L with 2 Pin Holes Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/85/42003.jpg"
+  },
+  {
+    "quantity": "14",
+    "model_id": "32064",
+    "description": "Dark Bluish Gray Technic, Brick 1 x 2 with Axle Hole Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/85/32064.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3701",
+    "description": "Dark Bluish Gray Technic, Brick 1 x 4 with Holes Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/85/3701.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "32018",
+    "description": "Dark Bluish Gray Technic, Brick 1 x 14 with Holes Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/85/32018.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "60483",
+    "description": "Dark Bluish Gray Technic, Liftarm 1 x 2 Thick with Pin Hole and Axle Hole Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/85/60483.jpg"
+  },
+  {
+    "quantity": "15",
+    "model_id": "6632",
+    "description": "Dark Bluish Gray Technic, Liftarm 1 x 3 Thin Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/85/6632.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "32316",
+    "description": "Dark Bluish Gray Technic, Liftarm 1 x 5 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/85/32316.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "32348",
+    "description": "Dark Bluish Gray Technic, Liftarm 1 x 7 Bent (4 - 4) Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/85/32348.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "40490",
+    "description": "Dark Bluish Gray Technic, Liftarm 1 x 9 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/85/40490.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "2905",
+    "description": "Dark Bluish Gray Technic, Liftarm Triangle Thin Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/85/2905.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "32002",
+    "description": "Dark Bluish Gray Technic, Pin 3/4 Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/85/32002.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "2431",
+    "description": "Dark Bluish Gray Tile 1 x 4 Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/85/2431.jpg"
+  },
+  {
+    "quantity": "7",
+    "model_id": "2555",
+    "description": "Dark Bluish Gray Tile, Modified 1 x 1 with Clip Catalog: Parts: Tile, Modified",
+    "imgUrl": "https://img.bricklink.com/P/85/2555.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "2460",
+    "description": "Dark Bluish Gray Tile, Modified 2 x 2 with Pin Catalog: Parts: Tile, Modified",
+    "imgUrl": "https://img.bricklink.com/P/85/2460.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "48933",
+    "description": "Dark Bluish Gray Wedge 4 x 4 Triple with Stud Notches Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/85/48933.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "41748",
+    "description": "Dark Bluish Gray Wedge 6 x 2 Left Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/85/41748.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "41747",
+    "description": "Dark Bluish Gray Wedge 6 x 2 Right Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/85/41747.jpg"
+  },
+  {
+    "quantity": "16",
+    "model_id": "4079b",
+    "description": "Dark Green Minifigure, Utensil Seat (Chair) 2 x 2 with Center Sprue Mark Catalog: Parts: Minifigure, Utensil",
+    "imgUrl": "https://img.bricklink.com/P/80/4079b.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "3004",
+    "description": "Dark Red Brick 1 x 2 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/59/3004.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "2357",
+    "description": "Dark Red Brick 2 x 2 Corner Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/59/2357.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "3001",
+    "description": "Dark Red Brick 2 x 4 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/59/3001.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4070",
+    "description": "Dark Red Brick, Modified 1 x 1 with Headlight Catalog: Parts: Brick, Modified",
+    "imgUrl": "https://img.bricklink.com/P/59/4070.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "3023",
+    "description": "Dark Red Plate 1 x 2 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/59/3023.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3021",
+    "description": "Dark Red Plate 2 x 3 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/59/3021.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "54200",
+    "description": "Dark Red Slope 30 1 x 1 x 2/3 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/59/54200.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "50950",
+    "description": "Dark Red Slope, Curved 3 x 1 Catalog: Parts: Slope, Curved",
+    "imgUrl": "https://img.bricklink.com/P/59/50950.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "4162",
+    "description": "Dark Red Tile 1 x 8 Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/59/4162.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "47753",
+    "description": "Dark Red Wedge 4 x 4 No Studs Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/59/47753.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "2450",
+    "description": "Dark Red Wedge, Plate 3 x 3 Cut Corner Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/59/2450.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "43719",
+    "description": "Dark Red Wedge, Plate 4 x 4 Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/59/43719.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "30503",
+    "description": "Dark Red Wedge, Plate 4 x 4 Cut Corner Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/59/30503.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "54384",
+    "description": "Dark Red Wedge, Plate 6 x 3 Left Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/59/54384.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "54383",
+    "description": "Dark Red Wedge, Plate 6 x 3 Right Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/59/54383.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "60208",
+    "description": "Dark Tan Wheel 31mm D. x 15mm Technic Catalog: Parts: Wheel",
+    "imgUrl": "https://img.bricklink.com/P/69/60208.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4592c02 (Inv)",
+    "description": "Light Bluish Gray Antenna Small Base with Black Lever Catalog: Parts: Antenna",
+    "imgUrl": "https://img.bricklink.com/P/86/4592c02.jpg"
+  },
+  {
+    "quantity": "7",
+    "model_id": "63965",
+    "description": "Light Bluish Gray Bar   6L with Stop Ring Catalog: Parts: Bar",
+    "imgUrl": "https://img.bricklink.com/P/86/63965.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3622",
+    "description": "Light Bluish Gray Brick 1 x 3 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/3622.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "3009",
+    "description": "Light Bluish Gray Brick 1 x 6 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/3009.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "3003",
+    "description": "Light Bluish Gray Brick 2 x 2 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/3003.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "3007",
+    "description": "Light Bluish Gray Brick 2 x 8 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/3007.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "2458",
+    "description": "Light Bluish Gray Brick, Modified 1 x 2 with Pin Catalog: Parts: Brick, Modified",
+    "imgUrl": "https://img.bricklink.com/P/86/2458.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3941",
+    "description": "Light Bluish Gray Brick, Round 2 x 2 with Axle Hole Catalog: Parts: Brick, Round",
+    "imgUrl": "https://img.bricklink.com/P/86/3941.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "44359",
+    "description": "Light Bluish Gray Cylinder Hemisphere 3 x 3 Ball Turret Catalog: Parts: Cylinder",
+    "imgUrl": "https://img.bricklink.com/P/86/44359.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "44358",
+    "description": "Light Bluish Gray Cylinder Hemisphere 3 x 3 Ball Turret Socket with 2 x 2 Base Catalog: Parts: Cylinder",
+    "imgUrl": "https://img.bricklink.com/P/86/44358.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "3960pb005",
+    "description": "Light Bluish Gray Dish 4 x 4 Inverted (Radar) with Solid Stud with Star Wars AT-AT/AT-TE/AT-OT Pattern Catalog: Parts: Dish, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/86/3960pb005.jpg"
+  },
+  {
+    "quantity": "18",
+    "model_id": "44375a",
+    "description": "Light Bluish Gray Dish 6 x 6 Inverted (Radar) - Hollow Studs Catalog: Parts: Dish",
+    "imgUrl": "https://img.bricklink.com/P/86/44375a.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "3937",
+    "description": "Light Bluish Gray Hinge Brick 1 x 2 Base Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/86/3937.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "30540",
+    "description": "Light Bluish Gray Hinge Brick 1 x 2 Locking with 2 Fingers Horizontal End, 9 Teeth Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/86/30540.jpg"
+  },
+  {
+    "quantity": "12",
+    "model_id": "44302",
+    "description": "Light Bluish Gray Hinge Plate 1 x 2 Locking with 2 Fingers on End (Undetermined Type) Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/86/44302.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "44568",
+    "description": "Light Bluish Gray Hinge Plate 1 x 4 Locking Dual 1 Fingers on Side Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/86/44568.jpg"
+  },
+  {
+    "quantity": "29",
+    "model_id": "3023",
+    "description": "Light Bluish Gray Plate 1 x 2 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3023.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "3710",
+    "description": "Light Bluish Gray Plate 1 x 4 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3710.jpg"
+  },
+  {
+    "quantity": "32",
+    "model_id": "3666",
+    "description": "Light Bluish Gray Plate 1 x 6 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3666.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "4477",
+    "description": "Light Bluish Gray Plate 1 x 10 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/4477.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3021",
+    "description": "Light Bluish Gray Plate 2 x 3 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3021.jpg"
+  },
+  {
+    "quantity": "13",
+    "model_id": "3795",
+    "description": "Light Bluish Gray Plate 2 x 6 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3795.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "3832",
+    "description": "Light Bluish Gray Plate 2 x 10 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3832.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3031",
+    "description": "Light Bluish Gray Plate 4 x 4 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3031.jpg"
+  },
+  {
+    "quantity": "11",
+    "model_id": "3035",
+    "description": "Light Bluish Gray Plate 4 x 8 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3035.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "3036",
+    "description": "Light Bluish Gray Plate 6 x 8 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3036.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3028",
+    "description": "Light Bluish Gray Plate 6 x 12 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3028.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "41539",
+    "description": "Light Bluish Gray Plate 8 x 8 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/41539.jpg"
+  },
+  {
+    "quantity": "7",
+    "model_id": "2476",
+    "description": "Light Bluish Gray Plate, Modified 2 x 2 with Pin on Bottom Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/86/2476.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "30157",
+    "description": "Light Bluish Gray Plate, Modified 2 x 4 with Pins Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/86/30157.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "30303",
+    "description": "Light Bluish Gray Plate, Modified 6 x 6 x 2/3 Cross with Dome Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/86/30303.jpg"
+  },
+  {
+    "quantity": "16",
+    "model_id": "4073",
+    "description": "Light Bluish Gray Plate, Round 1 x 1 Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/86/4073.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3045",
+    "description": "Light Bluish Gray Slope 45 2 x 2 Double Convex Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/86/3045.jpg"
+  },
+  {
+    "quantity": "12",
+    "model_id": "3037",
+    "description": "Light Bluish Gray Slope 45 2 x 4 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/86/3037.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "3747b",
+    "description": "Light Bluish Gray Slope, Inverted 33 3 x 2 with Connections between Studs Catalog: Parts: Slope, Inverted",
+    "imgUrl": "https://img.bricklink.com/P/86/3747b.jpg"
+  },
+  {
+    "quantity": "7",
+    "model_id": "4519",
+    "description": "Light Bluish Gray Technic, Axle 3 Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/86/4519.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "32073",
+    "description": "Light Bluish Gray Technic, Axle 5 Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/86/32073.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "32016",
+    "description": "Light Bluish Gray Technic, Axle and Pin Connector Angled #3 - 157.5 degrees Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/86/32016.jpg"
+  },
+  {
+    "quantity": "11",
+    "model_id": "6538c",
+    "description": "Light Bluish Gray Technic, Axle Connector 2L (Smooth with x Hole + Orientation) Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/86/6538c.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "6541",
+    "description": "Light Bluish Gray Technic, Brick 1 x 1 with Hole Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/6541.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3702",
+    "description": "Light Bluish Gray Technic, Brick 1 x 8 with Holes Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/3702.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "2730",
+    "description": "Light Bluish Gray Technic, Brick 1 x 10 with Holes Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/2730.jpg"
+  },
+  {
+    "quantity": "11",
+    "model_id": "40344",
+    "description": "Light Bluish Gray Technic, Brick 4 x 6 Open Center Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/86/40344.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3713",
+    "description": "Light Bluish Gray Technic, Bush Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/86/3713.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "4265c",
+    "description": "Light Bluish Gray Technic, Bush 1/2 Smooth Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/86/4265c.jpg"
+  },
+  {
+    "quantity": "14",
+    "model_id": "32523",
+    "description": "Light Bluish Gray Technic, Liftarm 1 x 3 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/86/32523.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "32524",
+    "description": "Light Bluish Gray Technic, Liftarm 1 x 7 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/86/32524.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "32271",
+    "description": "Light Bluish Gray Technic, Liftarm 1 x 9 Bent (7 - 3) Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/86/32271.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "32525",
+    "description": "Light Bluish Gray Technic, Liftarm 1 x 11 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/86/32525.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "32009",
+    "description": "Light Bluish Gray Technic, Liftarm 1 x 11.5 Double Bent Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/86/32009.jpg"
+  },
+  {
+    "quantity": "7",
+    "model_id": "32140",
+    "description": "Light Bluish Gray Technic, Liftarm 2 x 4 L-Shape Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/86/32140.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "4274",
+    "description": "Light Bluish Gray Technic, Pin 1/2 Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/86/4274.jpg"
+  },
+  {
+    "quantity": "18",
+    "model_id": "61184",
+    "description": "Light Bluish Gray Technic, Pin 1/2 with 2L Bar Extension (Flick Missile) Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/86/61184.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "32333",
+    "description": "Light Bluish Gray Technic, Pin Connector Block 1 x 5 x 3 Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/86/32333.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "62462",
+    "description": "Light Bluish Gray Technic, Pin Connector Round 2L with Slot (Pin Joiner Round) Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/86/62462.jpg"
+  },
+  {
+    "quantity": "18",
+    "model_id": "3673",
+    "description": "Light Bluish Gray Technic, Pin without Friction Ridges Lengthwise Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/86/3673.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3709b",
+    "description": "Light Bluish Gray Technic, Plate 2 x 4 with 3 Holes Catalog: Parts: Technic, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/3709b.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "2431",
+    "description": "Light Bluish Gray Tile 1 x 4 Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/86/2431.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "4162",
+    "description": "Light Bluish Gray Tile 1 x 8 Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/86/4162.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "43710",
+    "description": "Light Bluish Gray Wedge 4 x 2 Triple Left Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/86/43710.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "43711",
+    "description": "Light Bluish Gray Wedge 4 x 2 Triple Right Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/86/43711.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "51739",
+    "description": "Light Bluish Gray Wedge, Plate 2 x 4 Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/51739.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "43723",
+    "description": "Light Bluish Gray Wedge, Plate 3 x 2 Left Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/43723.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "43722",
+    "description": "Light Bluish Gray Wedge, Plate 3 x 2 Right Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/43722.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "2419",
+    "description": "Light Bluish Gray Wedge, Plate 3 x 6 Cut Corners Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/2419.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "32059",
+    "description": "Light Bluish Gray Wedge, Plate 4 x 6 Cut Corners Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/32059.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "54384",
+    "description": "Light Bluish Gray Wedge, Plate 6 x 3 Left Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/54384.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "54383",
+    "description": "Light Bluish Gray Wedge, Plate 6 x 3 Right Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/86/54383.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "56145",
+    "description": "Light Bluish Gray Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim Catalog: Parts: Wheel",
+    "imgUrl": "https://img.bricklink.com/P/86/56145.jpg"
+  },
+  {
+    "quantity": "16",
+    "model_id": "4589b",
+    "description": "Red Cone 1 x 1 with Top Groove Catalog: Parts: Cone",
+    "imgUrl": "https://img.bricklink.com/P/5/4589b.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "30365",
+    "description": "Red Hinge Brick 1 x 2 Locking with 2 Fingers Vertical End, 9 Teeth Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/5/30365.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "6134",
+    "description": "Red Hinge Brick 2 x 2 Top Plate Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/5/6134.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "3794a",
+    "description": "Red Plate, Modified 1 x 2 with 1 Stud without Groove (Jumper) Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/5/3794a.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "60470",
+    "description": "Red Plate, Modified 1 x 2 with 2 U Clips (Horizontal Grip) Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/5/60470.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "2817",
+    "description": "Red Plate, Modified 2 x 2 with Pin Holes Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/5/2817.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "32062",
+    "description": "Red Technic, Axle 2 Notched Catalog: Parts: Technic, Axle",
+    "imgUrl": "https://img.bricklink.com/P/5/32062.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "32523",
+    "description": "Red Technic, Liftarm 1 x 3 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/5/32523.jpg"
+  },
+  {
+    "quantity": "16",
+    "model_id": "32054",
+    "description": "Red Technic, Pin 3L with Friction Ridges Lengthwise and Stop Bush Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/5/32054.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "4032",
+    "description": "Reddish Brown Plate, Round 2 x 2 with Axle Hole Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/88/4032.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "44728",
+    "description": "Tan Bracket 1 x 2 - 2 x 2 Catalog: Parts: Bracket",
+    "imgUrl": "https://img.bricklink.com/P/2/44728.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "3003",
+    "description": "Tan Brick 2 x 2 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/2/3003.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "2540",
+    "description": "Tan Plate, Modified 1 x 2 with Bar Handle on Side with Free Ends Catalog: Parts: Plate, Modified",
+    "imgUrl": "https://img.bricklink.com/P/2/2540.jpg"
+  },
+  {
+    "quantity": "15",
+    "model_id": "4073",
+    "description": "Tan Plate, Round 1 x 1 Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/2/4073.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "3700",
+    "description": "Tan Technic, Brick 1 x 2 with Hole Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/2/3700.jpg"
+  },
+  {
+    "quantity": "7",
+    "model_id": "32556",
+    "description": "Tan Technic, Pin 3L without Friction Ridges Lengthwise Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/2/32556.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4150",
+    "description": "Tan Tile, Round 2 x 2 Catalog: Parts: Tile, Round",
+    "imgUrl": "https://img.bricklink.com/P/2/4150.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "4872",
+    "description": "Trans-Black Windscreen 3 x 4 x 4 Inverted Catalog: Parts: Windscreen",
+    "imgUrl": "https://img.bricklink.com/P/13/4872.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "41883",
+    "description": "Trans-Black Windscreen 6 x 4 x 2 Wedge Curved Catalog: Parts: Windscreen",
+    "imgUrl": "https://img.bricklink.com/P/13/41883.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "3004",
+    "description": "White Brick 1 x 2 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/1/3004.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "3010",
+    "description": "White Brick 1 x 4 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/1/3010.jpg"
+  },
+  {
+    "quantity": "17",
+    "model_id": "3008",
+    "description": "White Brick 1 x 8 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/1/3008.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3001",
+    "description": "White Brick 2 x 4 Catalog: Parts: Brick",
+    "imgUrl": "https://img.bricklink.com/P/1/3001.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "3063",
+    "description": "White Brick, Round Corner 2 x 2 Macaroni with Stud Notch Catalog: Parts: Brick, Round",
+    "imgUrl": "https://img.bricklink.com/P/1/3063.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "41531",
+    "description": "White Cylinder 4 x 4 x 1 2/3 with Pin Holes and Center Bar Catalog: Parts: Cylinder",
+    "imgUrl": "https://img.bricklink.com/P/1/41531.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "2335",
+    "description": "White Flag 2 x 2 Square Catalog: Parts: Flag",
+    "imgUrl": "https://img.bricklink.com/P/1/2335.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "44570",
+    "description": "White Hinge Plate 3 x 4 Locking Dual 2 Finger, 9 Teeth Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/1/44570.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3623",
+    "description": "White Plate 1 x 3 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/3623.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "4477",
+    "description": "White Plate 1 x 10 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/4477.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3034",
+    "description": "White Plate 2 x 8 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/3034.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "3032",
+    "description": "White Plate 4 x 6 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/3032.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3036",
+    "description": "White Plate 6 x 8 Catalog: Parts: Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/3036.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "4515",
+    "description": "White Slope 10 6 x 8 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/1/4515.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "54200",
+    "description": "White Slope 30 1 x 1 x 2/3 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/1/54200.jpg"
+  },
+  {
+    "quantity": "14",
+    "model_id": "3040",
+    "description": "White Slope 45 2 x 1 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/1/3040.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4445",
+    "description": "White Slope 45 2 x 8 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/1/4445.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "60481",
+    "description": "White Slope 65 2 x 1 x 2 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/1/60481.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3678b",
+    "description": "White Slope 65 2 x 2 x 2 with Bottom Tube Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/1/3678b.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "50950",
+    "description": "White Slope, Curved 3 x 1 Catalog: Parts: Slope, Curved",
+    "imgUrl": "https://img.bricklink.com/P/1/50950.jpg"
+  },
+  {
+    "quantity": "26",
+    "model_id": "42022",
+    "description": "White Slope, Curved 6 x 1 Catalog: Parts: Slope, Curved",
+    "imgUrl": "https://img.bricklink.com/P/1/42022.jpg"
+  },
+  {
+    "quantity": "14",
+    "model_id": "42023",
+    "description": "White Slope, Curved 6 x 1 Inverted Catalog: Parts: Slope, Curved",
+    "imgUrl": "https://img.bricklink.com/P/1/42023.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "3665",
+    "description": "White Slope, Inverted 45 2 x 1 Catalog: Parts: Slope, Inverted",
+    "imgUrl": "https://img.bricklink.com/P/1/3665.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "52501",
+    "description": "White Slope, Inverted 45 6 x 1 Double with 1 x 4 Cutout Catalog: Parts: Slope, Inverted",
+    "imgUrl": "https://img.bricklink.com/P/1/52501.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "2730",
+    "description": "White Technic, Brick 1 x 10 with Holes Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/1/2730.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "3703",
+    "description": "White Technic, Brick 1 x 16 with Holes Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/1/3703.jpg"
+  },
+  {
+    "quantity": "8",
+    "model_id": "32278",
+    "description": "White Technic, Liftarm 1 x 15 Thick Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/1/32278.jpg"
+  },
+  {
+    "quantity": "18",
+    "model_id": "62462",
+    "description": "White Technic, Pin Connector Round 2L with Slot (Pin Joiner Round) Catalog: Parts: Technic, Connector",
+    "imgUrl": "https://img.bricklink.com/P/1/62462.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "6636",
+    "description": "White Tile 1 x 6 Catalog: Parts: Tile",
+    "imgUrl": "https://img.bricklink.com/P/1/6636.jpg"
+  },
+  {
+    "quantity": "7",
+    "model_id": "6179",
+    "description": "White Tile, Modified 4 x 4 with Studs on Edge Catalog: Parts: Tile, Modified",
+    "imgUrl": "https://img.bricklink.com/P/1/6179.jpg"
+  },
+  {
+    "quantity": "5",
+    "model_id": "4150",
+    "description": "White Tile, Round 2 x 2 Catalog: Parts: Tile, Round",
+    "imgUrl": "https://img.bricklink.com/P/1/4150.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "41765",
+    "description": "White Wedge 6 x 2 Inverted Left Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/1/41765.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "41764",
+    "description": "White Wedge 6 x 2 Inverted Right Catalog: Parts: Wedge",
+    "imgUrl": "https://img.bricklink.com/P/1/41764.jpg"
+  },
+  {
+    "quantity": "10",
+    "model_id": "2450",
+    "description": "White Wedge, Plate 3 x 3 Cut Corner Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/2450.jpg"
+  },
+  {
+    "quantity": "16",
+    "model_id": "2413",
+    "description": "White Wedge, Plate 4 x 9 without Stud Notches Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/2413.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "50305",
+    "description": "White Wedge, Plate 8 x 3 Left Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/50305.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "50304",
+    "description": "White Wedge, Plate 8 x 3 Right Catalog: Parts: Wedge, Plate",
+    "imgUrl": "https://img.bricklink.com/P/1/50304.jpg"
+  },
+  {
+    "quantity": "9",
+    "model_id": "4265c",
+    "description": "Yellow Technic, Bush 1/2 Smooth Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/3/4265c.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "2853",
+    "description": "Yellow Technic, Engine Crankshaft Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/3/2853.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "6632",
+    "description": "Yellow Technic, Liftarm 1 x 3 Thin Catalog: Parts: Technic, Liftarm",
+    "imgUrl": "https://img.bricklink.com/P/3/6632.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "sw0191 (Inv)",
+    "description": "Clone Pilot (Clone Wars) Catalog: Minifigs: Star Wars: Star Wars The Clone Wars",
+    "imgUrl": "https://img.bricklink.com/M/sw0191.jpg"
+  },
+  {
+    "quantity": "6",
+    "model_id": "sw0201 (Inv)",
+    "description": "Clone Trooper Clone Wars Catalog: Minifigs: Star Wars: Star Wars The Clone Wars",
+    "imgUrl": "https://img.bricklink.com/M/sw0201.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "2780",
+    "description": "Black Technic, Pin with Friction Ridges Lengthwise, Staggered, with or without Center Slots Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/11/2780.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4274",
+    "description": "Blue Technic, Pin 1/2 Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/7/4274.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "54200",
+    "description": "Dark Blue Slope 30 1 x 1 x 2/3 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/63/54200.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "32002",
+    "description": "Dark Bluish Gray Technic, Pin 3/4 Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/85/32002.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "54200",
+    "description": "Dark Red Slope 30 1 x 1 x 2/3 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/59/54200.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4592c02 (Inv)",
+    "description": "Light Bluish Gray Antenna Small Base with Black Lever Catalog: Parts: Antenna",
+    "imgUrl": "https://img.bricklink.com/P/86/4592c02.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4073",
+    "description": "Light Bluish Gray Plate, Round 1 x 1 Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/86/4073.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3713",
+    "description": "Light Bluish Gray Technic, Bush Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/86/3713.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4265c",
+    "description": "Light Bluish Gray Technic, Bush 1/2 Smooth Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/86/4265c.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4274",
+    "description": "Light Bluish Gray Technic, Pin 1/2 Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/86/4274.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3673",
+    "description": "Light Bluish Gray Technic, Pin without Friction Ridges Lengthwise Catalog: Parts: Technic, Pin",
+    "imgUrl": "https://img.bricklink.com/P/86/3673.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4073",
+    "description": "Tan Plate, Round 1 x 1 Catalog: Parts: Plate, Round",
+    "imgUrl": "https://img.bricklink.com/P/2/4073.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "54200",
+    "description": "White Slope 30 1 x 1 x 2/3 Catalog: Parts: Slope",
+    "imgUrl": "https://img.bricklink.com/P/1/54200.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4265c",
+    "description": "Yellow Technic, Bush 1/2 Smooth Catalog: Parts: Technic",
+    "imgUrl": "https://img.bricklink.com/P/3/4265c.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3039pb088",
+    "description": "Dark Bluish Gray Slope 45 2 x 2 with Dark Red SW Semicircle on Tan Background Pattern (Sticker) - Set 10195 Catalog: Parts: Slope, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/85/3039pb088.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "48933pb017",
+    "description": "Dark Bluish Gray Wedge 4 x 4 Triple with Stud Notches with Dark Bluish Gray and Dark Red Stripe Pattern (Sticker) - Set 10195 Catalog: Parts: Wedge, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/85/48933pb017.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "47753pb040",
+    "description": "Dark Red Wedge 4 x 4 No Studs with Dark Bluish Gray and Dark Red Stripe Pattern (Sticker) - Set 10195 Catalog: Parts: Wedge, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/59/47753pb040.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3009pb195",
+    "description": "Light Bluish Gray Brick 1 x 6 with Dark Bluish Gray Squares and Black Grids Pattern (Sticker) - Set 10195 Catalog: Parts: Brick, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/86/3009pb195.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "3937c02 (Inv)",
+    "description": "Light Bluish Gray Hinge Brick 1 x 2 Base with Black Hinge Brick 1 x 2 Top (3937 / 3938) Catalog: Parts: Hinge",
+    "imgUrl": "https://img.bricklink.com/P/86/3937c02.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4150pb167",
+    "description": "Tan Tile, Round 2 x 2 with Dark Red SW Semicircles on Tan Background Pattern (Sticker) - Sets 10195 / 75043 Catalog: Parts: Tile, Round, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/2/4150pb167.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4872pb06",
+    "description": "Trans-Black Windscreen 3 x 4 x 4 Inverted with Window Frames with Rectangles, Triangles and Small Red Lines Pattern (Stickers) - Set 10195 Catalog: Parts: Windscreen, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/13/4872pb06.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4872pb05L",
+    "description": "Trans-Black Windscreen 3 x 4 x 4 Inverted with Wiper Pattern Model Left (Sticker) - Set 10195 Catalog: Parts: Windscreen, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/13/4872pb05L.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4872pb05R",
+    "description": "Trans-Black Windscreen 3 x 4 x 4 Inverted with Wiper Pattern Model Right (Sticker) - Set 10195 Catalog: Parts: Windscreen, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/13/4872pb05R.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4515pb040L",
+    "description": "White Slope 10 6 x 8 with Battle Droid Head Pattern Model Left Side (Sticker) - Set 10195 Catalog: Parts: Slope, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/4515pb040L.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4515pb040R",
+    "description": "White Slope 10 6 x 8 with Battle Droid Head Pattern Model Right Side (Sticker) - Set 10195 Catalog: Parts: Slope, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/4515pb040R.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4515pb044L",
+    "description": "White Slope 10 6 x 8 with SW Republic Dropship Pattern Left (Sticker) - Set 10195 Catalog: Parts: Slope, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/4515pb044L.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4515pb044R",
+    "description": "White Slope 10 6 x 8 with SW Republic Dropship Pattern Right (Sticker) - Set 10195 Catalog: Parts: Slope, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/4515pb044R.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4515pb039L",
+    "description": "White Slope 10 6 x 8 with Wampa Face Profile Pattern Model Left Side (Sticker) - Set 10195 Catalog: Parts: Slope, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/4515pb039L.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "4515pb039R",
+    "description": "White Slope 10 6 x 8 with Wampa Face Profile Pattern Model Right Side (Sticker) - Set 10195 Catalog: Parts: Slope, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/4515pb039R.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "42023pb006L",
+    "description": "White Slope, Curved 6 x 1 Inverted with Yellow Triangle with Black Border and Small Triangle Pattern Model Left Side (Sticker) - Set 10195 Catalog: Parts: Slope, Curved, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/42023pb006L.jpg"
+  },
+  {
+    "quantity": "3",
+    "model_id": "42023pb006R",
+    "description": "White Slope, Curved 6 x 1 Inverted with Yellow Triangle with Black Border and Small Triangle Pattern Model Right Side (Sticker) - Set 10195 Catalog: Parts: Slope, Curved, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/42023pb006R.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "6179pb058",
+    "description": "White Tile, Modified 4 x 4 with Studs on Edge with Black and Dark Bluish Gray Hole and Light Gray Piping Pattern (Sticker) - Set 10195 Catalog: Parts: Tile, Modified, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/6179pb058.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "6179pb095",
+    "description": "White Tile, Modified 4 x 4 with Studs on Edge with Black Vents on Gray, Transparent Background Pattern (Sticker) - Set 10195 Catalog: Parts: Tile, Modified, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/6179pb095.jpg"
+  },
+  {
+    "quantity": "1",
+    "model_id": "6179pb059",
+    "description": "White Tile, Modified 4 x 4 with Studs on Edge with Canopy and Dark Blue Stripe Pattern (Sticker) - Set 10195 Catalog: Parts: Tile, Modified, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/6179pb059.jpg"
+  },
+  {
+    "quantity": "2",
+    "model_id": "4150pb002b",
+    "description": "White Tile, Round 2 x 2 with SW Republic Pattern on White Background (Sticker) - Sets 7676 / 7751 / 8014 / 9498 / 10195 / 75021 Catalog: Parts: Tile, Round, Decorated",
+    "imgUrl": "https://img.bricklink.com/P/1/4150pb002b.jpg"
+  },
+  {
+    "quantity": "14",
+    "model_id": "32064b",
+    "description": "Dark Bluish Gray Technic, Brick 1 x 2 with Axle Hole (x Shape) Catalog: Parts: Technic, Brick",
+    "imgUrl": "https://img.bricklink.com/P/85/32064b.jpg"
+  },
+  {
+    "quantity": "4",
+    "model_id": "85080",
+    "description": "White Brick, Round Corner 2 x 2 Macaroni with Stud Notch and Reinforced Underside Catalog: Parts: Brick, Round",
+    "imgUrl": "https://img.bricklink.com/P/1/85080.jpg"
+  }
+],
+                "setNumber" : "10195",
+                "setTitle" : "Republic Dropship with AT-OT"
+            }

@@ -18,7 +18,9 @@ const createLegoSetJson = require('./createLegoSetJson');
 // // const setNumber = '70413';
 // const url = 'https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=7675&itemSeq=1';
 // const setNumber = '7675';
-const url = 'https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=7676&itemSeq=1';
-const setNumber = '7676';
+// const url = 'https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=7676&itemSeq=1';
+// const setNumber = '7676';
+const url = 'https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=10195&itemSeq=1';
+const setNumber = '10195';
 
 createLegoSetJson(url, setNumber)

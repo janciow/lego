@@ -24,3 +24,26 @@ export const getLegoPiratesShipBrickListById = (legoSetId: string) => {
         })
     }
 };
+
+export const getLegoStarWarsCloneShipBrickListSuccess = (legoStarWarsCloneShipBrickList) => {
+    return {
+        type: ActionTypes.BRICKS_BALANCE_LEGO_STAR_WARS_CLONE_SHIP_BRICK_LIST_GET,
+        legoStarWarsCloneShipBrickList
+    };
+};
+
+export const getLegoStarWarsCloneShipBrickListFailed = () => {
+    return {
+        type: ActionTypes.BRICKS_BALANCE_LEGO_LEGO_STAR_WARS_CLONE_SHIP_BRICK_LIST_GET_FAIL,
+    };
+};
+
+export const getLegoStarWarsCloneShipBrickListById = (legoSetId: string) => {
+    return dispatch => {
+        setApi.fetchLegoStarWarsCloneShipBrickList(legoSetId).then(response => {
+            dispatch(getLegoStarWarsCloneShipBrickListSuccess(response.data.items));
+        }).catch(error => {
+            dispatch(getLegoStarWarsCloneShipBrickListFailed());
+        })
+    }
+};

@@ -5,6 +5,7 @@ export {
 } from './sets';
 export {
     getLegoPiratesShipBrickListById,
+    getLegoStarWarsCloneShipBrickListById
 } from './brick-balance';
 export {
     updatLegoBrickTotalQuantity,

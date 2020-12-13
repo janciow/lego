@@ -15,3 +15,16 @@ export interface BrickBalanceLegoPiratesShip {
     lego_set_id: string;
     description: string;
 }
+
+export interface BrickBalanceLegoStarWarsClonShips {
+    img_pathname: string;
+    price: number;
+    model_id: string;
+    element_id: string;
+    set_7675_q: null | number;
+    set_7676_q: null | number;
+    total_q: number;
+    quantity_total: number | null;
+    lego_set_id: string;
+    description: string;
+}
