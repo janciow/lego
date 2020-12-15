@@ -69,3 +69,28 @@ export const getSetBricksBySetId = (legoSetId: string) => {
         })
     }
 };
+
+export const updatLegoBrickQuantityInSetSuccess = (response) => {
+    return {
+        type: ActionTypes.UPDAT_LEGO_SET_BRICK_QUANTITY_IN_SET,
+        message: response.data.message
+    };
+};
+
+export const updatLegoBrickQuantityInSetFailed = () => {
+    return {
+        type: ActionTypes.UPDAT_LEGO_SET_BRICK_QUANTITY_IN_SET_FAIL,
+    };
+};
+
+export const updatLegoBrickQuantityInSet = (elementId: string, setId:string ,quantityInSet: number) => {
+    return dispatch => {
+        setApi.updatLegoBrickQuantityInSet(elementId, setId, quantityInSet).then(response => {
+            dispatch(updatLegoBrickQuantityInSetSuccess(response));
+            return true
+        }).catch(error => {
+            dispatch(updatLegoBrickQuantityInSetFailed());
+        })
+
+    }
+};

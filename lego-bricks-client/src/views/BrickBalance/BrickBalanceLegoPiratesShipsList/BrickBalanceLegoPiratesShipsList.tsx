@@ -35,7 +35,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
         this.props.history.push(`${setNumber}`)
     }
 
-    updateTotalValu = (elementId: string, quantityTotal: number): any => {
+    updateTotalValue = (elementId: string, setsId :string ,quantityTotal: number): any => {
         this.props.updatLegoBrickTotalQuantity(elementId, quantityTotal)
         const { setId } = this.props.match.params
         this.props.getLegoPiratesShipBrickListById(setId);
@@ -106,7 +106,8 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                                         <td className="text-center align-middle">
                                             <QuantityTableInput
                                                 element_id={element_id}
-                                                updateTotalValu={this.updateTotalValu}
+                                                lego_set_id={''}
+                                                updateTotalValue={this.updateTotalValue}
                                             />
                                         </td>
                                         <td className="align-middle">{description}</td>

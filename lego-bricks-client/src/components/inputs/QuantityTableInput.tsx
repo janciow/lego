@@ -1,11 +1,12 @@
 import { Field, Form, Formik } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';
-import classNames  from 'classnames';
+import classNames from 'classnames';
 
 interface QuantityTableInputProps {
     element_id: string;
-    updateTotalValu: (elementId: string, quantityTotal: number) => Promise<void>;
+    lego_set_id: string;
+    updateTotalValue: (elementId: string, setId: string, quantityTotal: number) => Promise<void>;
 }
 
 const totalSchema = Yup.object().shape({
@@ -13,14 +14,14 @@ const totalSchema = Yup.object().shape({
         .required('Required')
 });
 
-const QuantityTableInput: React.FC<QuantityTableInputProps> = ({ element_id, updateTotalValu }) => {
-    const initialValues: any = { quantity_total_value: '', element_id };
+const QuantityTableInput: React.FC<QuantityTableInputProps> = ({ element_id, lego_set_id, updateTotalValue }) => {
+    const initialValues: any = { quantity_total_value: '', element_id, lego_set_id };
     return (
         <Formik
             initialValues={initialValues}
             validationSchema={totalSchema}
             onSubmit={(values, actions) => {
-                updateTotalValu(values.element_id, values.quantity_total_value)
+                updateTotalValue(values.element_id, values.lego_set_id, values.quantity_total_value)
                 actions.setSubmitting(false);
             }} >
             {({ isSubmitting, errors, touched }) => (

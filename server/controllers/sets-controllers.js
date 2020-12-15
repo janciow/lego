@@ -1,15 +1,5 @@
 const connection = require("../../db/db_connect");
 
-const getBrickCount = (req, res) => {
-    const q = "SELECT COUNT(*) AS count FROM brick";
-    connection.query(q, function (err, results) {
-        if (err) throw err;
-        const count = results[0].count;
-        res.status(200);
-        res.json({ message: count });
-    });
-}
-
 const getSets = (req, res) => {
     const q = "SELECT * FROM lego_sets";
     connection.query(q, function (err, results) {
@@ -46,7 +36,6 @@ const getSetBricksById = (req, res) => {
 }
 
 const createLegoSet = async (req, res, next) => {
-
     const { setNumber, name, description } = req.body;
     const setData = [[setNumber, name, description]]
     const setQuery = "INSERT IGNORE INTO lego_sets (set_number, name, description) VALUES ?";
@@ -57,8 +46,19 @@ const createLegoSet = async (req, res, next) => {
 
 }
 
-exports.getBrickCount = getBrickCount;
+const updatLegoBrickQuantityInSet = async (req, res, next) => {
+    const { elementId, legoSetId } = req.params;   
+    const { quantityInSet } = req.body;
+    const setData = [[quantityInSet], [legoSetId], [elementId]]
+    const setQuery = "UPDATE lego_set_parts SET quantity_in_set = ? WHERE lego_set_id = ? and brick_id = ?";
+    connection.query(setQuery, setData, function (error, result) {
+        res.status(200);
+        res.json({ message: result.message });
+    });
+}
+
 exports.getSets = getSets;
 exports.getSetById = getSetById;
 exports.getSetBricksById = getSetBricksById;
 exports.createLegoSet = createLegoSet;
+exports.updatLegoBrickQuantityInSet = updatLegoBrickQuantityInSet;

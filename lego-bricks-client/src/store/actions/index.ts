@@ -1,7 +1,8 @@
 export {
     getSetsList,
     getLegoSetDetails,
-    getSetBricksBySetId
+    getSetBricksBySetId,
+    updatLegoBrickQuantityInSet
 } from './sets';
 export {
     getLegoPiratesShipBrickListById,

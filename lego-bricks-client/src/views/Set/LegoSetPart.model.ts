@@ -6,7 +6,7 @@ class LegoSetPart {
         public description: string | undefined,
         public element_id: string,
         public img_pathname: string | null,
-        public lego_set_id: string | null,
+        public lego_set_id: string,
         public model_id: string | null,
         public price: number | null,
         public quantity: number | null,

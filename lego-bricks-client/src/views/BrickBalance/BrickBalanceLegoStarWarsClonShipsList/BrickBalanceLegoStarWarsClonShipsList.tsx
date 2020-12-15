@@ -35,7 +35,7 @@ class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalance
         this.props.history.push(`/brick-balance/${setNumber}/sw`)
     }
 
-    updateTotalValu = (elementId: string, quantityTotal: number): any => {
+    updateTotalValue = (elementId: string, setIds: string, quantityTotal: number): any => {
         this.props.updatLegoBrickTotalQuantity(elementId, quantityTotal)
         const { setId } = this.props.match.params
         this.props.getLegoStarWarsCloneShipBrickListById(setId);
@@ -95,7 +95,8 @@ class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalance
                                         <td className="text-center align-middle">
                                             <QuantityTableInput
                                                 element_id={element_id}
-                                                updateTotalValu={this.updateTotalValu}
+                                                lego_set_id={'lego_set_id'}
+                                                updateTotalValue={this.updateTotalValue}
                                             />
                                         </td>
                                         <td className="align-middle">{description}</td>

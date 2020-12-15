@@ -1,0 +1,1 @@
+UPDATE lego_set_parts SET quantity_in_set = '3' WHERE lego_set_id = '10195' and brick_id = '23351';
