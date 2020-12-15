@@ -29,11 +29,8 @@ legoSets.forEach(legotSetNumber => {
     const setData = [[legoSetBrickModel["setNumber"], legoSetBrickModel["setTitle"], ""]];
     const setPartData = prepereSetsData(legoSetBrickModel[legotSetNumber], legotSetNumber);
 
-    console.log(setPartData);
-
     connection.query(colorQuery, [colors], function (error, result) {
         if (error) throw error;
-        // console.log(result);
     });
 
     connection.query(brickQuery, [brickData], function (error, result) {
@@ -41,7 +38,6 @@ legoSets.forEach(legotSetNumber => {
             console.log('this.sql', this.sql); //command/query
             console.log(error);
         }
-        // console.log(result);
     });
 
     connection.query(setQuery, [setData], function (error, result) {
@@ -59,8 +55,6 @@ legoSets.forEach(legotSetNumber => {
         }
         console.log(result);
     });
-
-
 });
 
 

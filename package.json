@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "parser": "nodemon --watch src parser/parser.js",
     "ib": "nodemon insertData/insertBricks.js",
+    "gi": "nodemon insertData/getImageFiles.js",
+    "uq": "nodemon insertData/updateBrickQuantity.js",
     "server": "nodemon server/app.js"
   },
   "author": "",
