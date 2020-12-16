@@ -18,8 +18,8 @@ interface SetDetailsProps {
 interface SetDetailDispatchProps {
     getLegoSetDetails: (legoSetNumber: string) => Promise<void>;
     getSetBricksBySetId: (legoSetNumber: string) => Promise<void>;
-    updatLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
-    updatLegoBrickQuantityInSet: (elementId: string, setIds: string ,quantityTotal: number) => Promise<void>;
+    updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
+    updateLegoBrickQuantityInSet: (elementId: string, setIds: string ,quantityTotal: number) => Promise<void>;
 }
 
 class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps & RouteComponentProps<{ setId: string }>> {
@@ -31,13 +31,13 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
     }
 
     updateTotalValue = (elementId: string, setIds: string, quantityTotal: number): any => {
-        this.props.updatLegoBrickTotalQuantity(elementId, quantityTotal)
+        this.props.updateLegoBrickTotalQuantity(elementId, quantityTotal)
         const { setId } = this.props.match.params
         this.props.getSetBricksBySetId(setId);
     }
 
-    updateBuidInValue = (elementId: string, setIds: string, quantityTotal: number): any => {
-        this.props.updatLegoBrickQuantityInSet(elementId, setIds ,quantityTotal)
+    updateBuildInValue = (elementId: string, setIds: string, quantityTotal: number): any => {
+        this.props.updateLegoBrickQuantityInSet(elementId, setIds ,quantityTotal)
         const { setId } = this.props.match.params
         this.props.getSetBricksBySetId(setId);
     }
@@ -47,7 +47,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
         return <>
             <h1>{set?.set_number} {set?.name}</h1>
             <h4>{set?.description}</h4>
-            <h2>Lista klcków </h2>
+            <h2>Lista klocków</h2>
             <div className="table-responsive">
                 <table className="table table-striped table-sm table-bordered">
                     <thead>
@@ -78,7 +78,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
                                             <QuantityTableInput element_id={element_id} lego_set_id={'lego_set_id'} updateTotalValue={this.updateTotalValue} />
                                         </td>
                                         <td className="align-middle">
-                                            <QuantityTableInput element_id={element_id} lego_set_id={lego_set_id} updateTotalValue={this.updateBuidInValue} />
+                                            <QuantityTableInput element_id={element_id} lego_set_id={lego_set_id} updateTotalValue={this.updateBuildInValue} />
                                         </td>
                                         <td className="align-middle">{description}</td>
                                     </tr>
@@ -94,7 +94,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
 
 const mapStateToProps = state => {
     return {
-        set: selectors.selectSetdetails(state),
+        set: selectors.selectSetDetails(state),
         setBricks: selectors.selectSetsBricks(state),
     };
 }
@@ -103,8 +103,8 @@ const mapDispatchToProps = (dispatch): SetDetailDispatchProps => {
     return {
         getLegoSetDetails: (legoSetNumber: string) => dispatch(actions.getLegoSetDetails(legoSetNumber)),
         getSetBricksBySetId: (legoSetNumber: string) => dispatch(actions.getSetBricksBySetId(legoSetNumber)),
-        updatLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updatLegoBrickTotalQuantity(elementId, quantityTotal)),
-        updatLegoBrickQuantityInSet: (elementId: string, setIds: string, quantityTotal: number) => dispatch(actions.updatLegoBrickQuantityInSet(elementId, setIds, quantityTotal)),
+        updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId, quantityTotal)),
+        updateLegoBrickQuantityInSet: (elementId: string, setIds: string, quantityTotal: number) => dispatch(actions.updateLegoBrickQuantityInSet(elementId, setIds, quantityTotal)),
     }
 }
 

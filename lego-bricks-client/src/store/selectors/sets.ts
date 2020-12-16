@@ -4,7 +4,7 @@ export const selectSetsList = (state: RootState) => {
     return state.sets.setsList
 }
 
-export const selectSetdetails = (state: RootState) => {
+export const selectSetDetails = (state: RootState) => {
     return state.sets.set
 }
 

@@ -2,12 +2,12 @@ export {
     getSetsList,
     getLegoSetDetails,
     getSetBricksBySetId,
-    updatLegoBrickQuantityInSet
+    updateLegoBrickQuantityInSet
 } from './sets';
 export {
     getLegoPiratesShipBrickListById,
     getLegoStarWarsCloneShipBrickListById
 } from './brick-balance';
 export {
-    updatLegoBrickTotalQuantity,
+    updateLegoBrickTotalQuantity,
 } from './bricks';

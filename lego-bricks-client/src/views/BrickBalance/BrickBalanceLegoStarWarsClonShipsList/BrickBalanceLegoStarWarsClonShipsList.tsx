@@ -14,10 +14,10 @@ interface BrickBalanceLegoStarWarsClonShipsListProps {
 
 interface BrickBalanceLegoStarWarsClonShipssListDispatchProps {
     getLegoStarWarsCloneShipBrickListById: (setId: string) => Promise<void>;
-    updatLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
+    updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
 }
 
-class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalanceLegoStarWarsClonShipsListProps & BrickBalanceLegoStarWarsClonShipssListDispatchProps & RouteComponentProps<{ setId: string }>> {
+class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<BrickBalanceLegoStarWarsClonShipsListProps & BrickBalanceLegoStarWarsClonShipssListDispatchProps & RouteComponentProps<{ setId: string }>> {
 
     componentDidMount() {
         const { setId } = this.props.match.params
@@ -36,7 +36,7 @@ class BrickBalanceLegoStarWarsClonShipsList extends React.Component<BrickBalance
     }
 
     updateTotalValue = (elementId: string, setIds: string, quantityTotal: number): any => {
-        this.props.updatLegoBrickTotalQuantity(elementId, quantityTotal)
+        this.props.updateLegoBrickTotalQuantity(elementId, quantityTotal)
         const { setId } = this.props.match.params
         this.props.getLegoStarWarsCloneShipBrickListById(setId);
     }
@@ -121,8 +121,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         getLegoStarWarsCloneShipBrickListById: (setId: string) => dispatch(actions.getLegoStarWarsCloneShipBrickListById(setId)),
-        updatLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updatLegoBrickTotalQuantity(elementId, quantityTotal)),
+        updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId, quantityTotal)),
     }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BrickBalanceLegoStarWarsClonShipsList));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BrickBalanceLegoStarWarsCloneShipsList));

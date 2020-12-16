@@ -12,6 +12,6 @@ export const fetchSetBricksBySetId = (setId: string) => {
     return api.get(`sets/${setId}/bricks`)
 }
 
-export const updatLegoBrickQuantityInSet = (elementId: string, setId: string , quantityInSet: number) => {
+export const updateLegoBrickQuantityInSet = (elementId: string, setId: string , quantityInSet: number) => {
     return api.patch(`sets/${setId}/bricks/${elementId}/quantity-in-set`, {quantityInSet});
 }

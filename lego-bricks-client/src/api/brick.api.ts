@@ -1,5 +1,5 @@
 import api from ".";
 
-export const updatLegoBrickQuantity = (elementId: string, quantityTotal: number) => {
+export const updateLegoBrickQuantity = (elementId: string, quantityTotal: number) => {
     return api.patch(`bricks/${elementId}/update-total-quantity`, {quantityTotal});
 }

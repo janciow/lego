@@ -70,26 +70,26 @@ export const getSetBricksBySetId = (legoSetId: string) => {
     }
 };
 
-export const updatLegoBrickQuantityInSetSuccess = (response) => {
+export const updateLegoBrickQuantityInSetSuccess = (response) => {
     return {
         type: ActionTypes.UPDAT_LEGO_SET_BRICK_QUANTITY_IN_SET,
         message: response.data.message
     };
 };
 
-export const updatLegoBrickQuantityInSetFailed = () => {
+export const updateLegoBrickQuantityInSetFailed = () => {
     return {
         type: ActionTypes.UPDAT_LEGO_SET_BRICK_QUANTITY_IN_SET_FAIL,
     };
 };
 
-export const updatLegoBrickQuantityInSet = (elementId: string, setId:string ,quantityInSet: number) => {
+export const updateLegoBrickQuantityInSet = (elementId: string, setId:string ,quantityInSet: number) => {
     return dispatch => {
-        setApi.updatLegoBrickQuantityInSet(elementId, setId, quantityInSet).then(response => {
-            dispatch(updatLegoBrickQuantityInSetSuccess(response));
+        setApi.updateLegoBrickQuantityInSet(elementId, setId, quantityInSet).then(response => {
+            dispatch(updateLegoBrickQuantityInSetSuccess(response));
             return true
         }).catch(error => {
-            dispatch(updatLegoBrickQuantityInSetFailed());
+            dispatch(updateLegoBrickQuantityInSetFailed());
         })
 
     }

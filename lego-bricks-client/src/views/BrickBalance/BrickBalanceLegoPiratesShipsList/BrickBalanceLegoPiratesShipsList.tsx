@@ -14,7 +14,7 @@ interface BrickBalanceLegoPiratesShipsListProps {
 
 interface BrickBalanceLegoPiratesShipsListDispatchProps {
     getLegoPiratesShipBrickListById: (setId: string) => Promise<void>;
-    updatLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
+    updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
 }
 
 class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoPiratesShipsListProps & BrickBalanceLegoPiratesShipsListDispatchProps & RouteComponentProps<{ setId: string }>> {
@@ -32,11 +32,11 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
     }
 
     goToSet = (setNumber: string) => {
-        this.props.history.push(`${setNumber}`)
+        this.props.history.push(`/brick-balance/${setNumber}/pirates`)
     }
 
     updateTotalValue = (elementId: string, setsId :string ,quantityTotal: number): any => {
-        this.props.updatLegoBrickTotalQuantity(elementId, quantityTotal)
+        this.props.updateLegoBrickTotalQuantity(elementId, quantityTotal)
         const { setId } = this.props.match.params
         this.props.getLegoPiratesShipBrickListById(setId);
     }
@@ -132,7 +132,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         getLegoPiratesShipBrickListById: (setId: string) => dispatch(actions.getLegoPiratesShipBrickListById(setId)),
-        updatLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updatLegoBrickTotalQuantity(elementId, quantityTotal)),
+        updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId, quantityTotal)),
     }
 }
 
