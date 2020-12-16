@@ -1,6 +1,6 @@
 const connection = require("../../db/db_connect");
 
-const getbrickBalanceBySet = (req, res) => {
+const getBrickBalanceBySet = (req, res) => {
   const setNumber = req.params.setNumber;
   const q =
     "SELECT brick.img_pathname,  brick.model_id, lego_set_parts.quantity FROM lego_set_parts LEFT JOIN brick ON lego_set_parts.brick_id = brick.element_id WHERE lego_set_parts.lego_set_id = ? ORDER BY brick.description";
@@ -12,7 +12,7 @@ const getbrickBalanceBySet = (req, res) => {
   });
 };
 
-const getbrickBalanceBySetsGoup = (req, res) => {
+const getBrickBalanceBySetsGroup = (req, res) => {
   const setNumber = req.params.setNumber;
   const { setsGroup } = req.query;
   const setsGroupArray = setsGroup.split(",");
@@ -31,7 +31,7 @@ const getbrickBalanceBySetsGoup = (req, res) => {
 
 const legoPiratesShipBrickList = (req, res) => {
   const setNumber = req.params.setNumber;
-  const qPramas = [
+  const qParams = [
     setNumber,
     setNumber,
     setNumber,
@@ -150,7 +150,7 @@ WHERE (
 ORDER BY brick.description;
     `;
 
-  connection.query(q, qPramas, function (err, results) {
+  connection.query(q, qParams, function (err, results) {
     if (err) throw err;
 
     res.status(200);
@@ -160,7 +160,7 @@ ORDER BY brick.description;
 
 const legoSWCloneShipBrickList = (req, res) => {
   const setNumber = req.params.setNumber;
-  const qPramas = [setNumber, setNumber, setNumber];
+  const qParams = [setNumber, setNumber, setNumber];
 
   const q = `
   SELECT img_pathname,
@@ -221,7 +221,7 @@ WHERE (
 ORDER BY brick.description;
     `;
 
-  connection.query(q, qPramas, function (err, results) {
+  connection.query(q, qParams, function (err, results) {
     if (err) throw err;
 
     res.status(200);
@@ -229,7 +229,7 @@ ORDER BY brick.description;
   });
 };
 
-exports.getbrickBalanceBySet = getbrickBalanceBySet;
-exports.getbrickBalanceBySetsGoup = getbrickBalanceBySetsGoup;
+exports.getBrickBalanceBySet = getBrickBalanceBySet;
+exports.getBrickBalanceBySetsGroup = getBrickBalanceBySetsGroup;
 exports.legoPiratesShipBrickList = legoPiratesShipBrickList;
 exports.legoSWCloneShipBrickList = legoSWCloneShipBrickList;

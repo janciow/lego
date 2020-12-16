@@ -46,7 +46,7 @@ const createLegoSet = async (req, res, next) => {
 
 }
 
-const updatLegoBrickQuantityInSet = async (req, res, next) => {
+const updateLegoBrickQuantityInSet = async (req, res, next) => {
     const { elementId, legoSetId } = req.params;   
     const { quantityInSet } = req.body;
     const setData = [[quantityInSet], [legoSetId], [elementId]]
@@ -61,4 +61,4 @@ exports.getSets = getSets;
 exports.getSetById = getSetById;
 exports.getSetBricksById = getSetBricksById;
 exports.createLegoSet = createLegoSet;
-exports.updatLegoBrickQuantityInSet = updatLegoBrickQuantityInSet;
+exports.updateLegoBrickQuantityInSet = updateLegoBrickQuantityInSet;

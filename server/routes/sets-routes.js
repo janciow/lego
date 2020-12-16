@@ -6,6 +6,6 @@ router.get("/", setsControllers.getSets);
 router.get("/:setNumber", setsControllers.getSetById);
 router.get("/:setNumber/bricks", setsControllers.getSetBricksById);
 router.post("/", setsControllers.createLegoSet);
-router.patch("/:legoSetId/bricks/:elementId/quantity-in-set", setsControllers.updatLegoBrickQuantityInSet);
+router.patch("/:legoSetId/bricks/:elementId/quantity-in-set", setsControllers.updateLegoBrickQuantityInSet);
 
 module.exports = router

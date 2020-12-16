@@ -6,6 +6,6 @@ router.get("/count", bricksControllers.getBrickCount);
 router.get("/", bricksControllers.getBricks);
 router.get("/:brickId", bricksControllers.getBrickById);
 router.post("/", bricksControllers.createLegoBrick);
-router.patch("/:elementId/update-total-quantity", bricksControllers.updatLegoBrickQuantity);
+router.patch("/:elementId/update-total-quantity", bricksControllers.updateLegoBrickQuantity);
 
 module.exports = router
