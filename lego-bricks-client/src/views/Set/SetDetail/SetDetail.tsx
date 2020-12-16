@@ -49,7 +49,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
             <h4>{set?.description}</h4>
             <h2>Lista klocków</h2>
             <div className="table-responsive">
-                <table className="table table-striped table-sm table-bordered">
+                <table className="table table-striped table-sm table-bordered table-responsive-1">
                     <thead>
                         <tr>
                             <th>Lp</th>

@@ -16,3 +16,28 @@ code {
   cursor: pointer;
 }
 
+// https://codepen.io/balajidesigner/pen/YBKQBK?editors=1100
+.table-responsive {
+  height:80vh;  
+  overflow:scroll;
+
+  thead tr:nth-child(2) th{
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+}
+
+.table-responsive-1 {
+  height:80vh;  
+  overflow:scroll;
+
+  thead tr:nth-child(1) th{
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+}
+
