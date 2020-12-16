@@ -3,8 +3,8 @@ dotenv.config();
 
 const fs = require('fs');
 const getImages = require('./insertBricks/getImages');
-const prepereBrickData = require('./insertBricks/prepereBrickData');
-const prepereSetsData = require('./insertBricks/prepereSetsData');
+const prepareBrickData = require('./insertBricks/prepareBrickData');
+const prepareSetsData = require('./insertBricks/prepareSetsData');
 const connection = require('../db/db_connect');
 
 
@@ -19,15 +19,15 @@ const set_parts_query = "INSERT IGNORE INTO lego_set_parts (lego_set_id, brick_i
 const legoSets = ['7675', '7676', '10195'];
 
 
-legoSets.forEach(legotSetNumber => {
+legoSets.forEach(legoSetNumber => {
 
-    getImages(legotSetNumber);
+    getImages(legoSetNumber);
 
-    let legoSetBrickModel = JSON.parse(fs.readFileSync(`jsons_lego/${legotSetNumber}.json`));
+    let legoSetBrickModel = JSON.parse(fs.readFileSync(`jsons_lego/${legoSetNumber}.json`));
 
-    const { colors, brickData } = prepereBrickData(legoSetBrickModel[legotSetNumber]);
+    const { colors, brickData } = prepareBrickData(legoSetBrickModel[legoSetNumber]);
     const setData = [[legoSetBrickModel["setNumber"], legoSetBrickModel["setTitle"], ""]];
-    const setPartData = prepereSetsData(legoSetBrickModel[legotSetNumber], legotSetNumber);
+    const setPartData = prepareSetsData(legoSetBrickModel[legoSetNumber], legoSetNumber);
 
     connection.query(colorQuery, [colors], function (error, result) {
         if (error) throw error;

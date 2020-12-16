@@ -1,15 +1,13 @@
-
-
-const prepereSetsData = (legotElements, setNumber) => {
+const prepareSetsData = (legoElements, setNumber) => {
 
     let brickSetData = [];
     // const colors = [[999, colorMap[999], 1],];
 
-    legotElements.forEach(legotElement => {
+    legoElements.forEach(legoElement => {
 
-        const urlPathParam = legotElement.imgUrl.split('/');
+        const urlPathParam = legoElement.imgUrl.split('/');
         let colorId = urlPathParam[4];
-        const model_id = legotElement.model_id.replace('(Inv)', '').trim();
+        const model_id = legoElement.model_id.replace('(Inv)', '').trim();
 
 
         const imageType = urlPathParam[3];
@@ -28,4 +26,4 @@ const prepereSetsData = (legotElements, setNumber) => {
 
 }
 
-module.exports = prepereSetsData
+module.exports = prepareSetsData

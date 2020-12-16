@@ -1,16 +1,16 @@
 const colorMap = require("../colorMap");
 
-const prepereBrickData = (legotElements) => {
+const prepareBrickData = (legoElements) => {
 
     let brickData = [];
     const colors = [[999, colorMap[999], 1],];
 
-    legotElements.forEach(legotElement => {
+    legoElements.forEach(legoElement => {
 
-        const { pathname } = new URL(legotElement.imgUrl);
-        const urlPathParam = legotElement.imgUrl.split('/');
+        const { pathname } = new URL(legoElement.imgUrl);
+        const urlPathParam = legoElement.imgUrl.split('/');
         let colorId = urlPathParam[4];
-        const model_id = legotElement.model_id.replace('(Inv)', '').trim();
+        const model_id = legoElement.model_id.replace('(Inv)', '').trim();
 
         colors.push([
             colorId,
@@ -29,7 +29,7 @@ const prepereBrickData = (legotElements) => {
             '' + model_id + colorId,
             model_id,
             0.5,
-            legotElement.description,
+            legoElement.description,
             pathname
         ])
     });
@@ -38,4 +38,4 @@ const prepereBrickData = (legotElements) => {
 
 }
 
-module.exports = prepereBrickData
+module.exports = prepareBrickData

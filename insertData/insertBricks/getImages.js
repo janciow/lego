@@ -2,18 +2,18 @@ const fs = require('fs');
 const download = require('./download');
 
 const getImages = function (setNumber) {
-    let rawdata = fs.readFileSync(`jsons_lego/${setNumber}.json`);
-    let legoSet = JSON.parse(rawdata);
+    let rawData = fs.readFileSync(`jsons_lego/${setNumber}.json`);
+    let legoSet = JSON.parse(rawData);
     const dir = './img';
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir);
     }
 
-    legoSet[setNumber].forEach(legotElement => {
+    legoSet[setNumber].forEach(legoElement => {
 
-        const urlPathParam = legotElement.imgUrl.split('/');
+        const urlPathParam = legoElement.imgUrl.split('/');
         const colorId = urlPathParam[4];
-        const model_id = legotElement.model_id.replace('(Inv)', '').trim();
+        const model_id = legoElement.model_id.replace('(Inv)', '').trim();
         const imageType = urlPathParam[3];
         let imgUrl = ''
 
@@ -30,7 +30,7 @@ const getImages = function (setNumber) {
             imgUrl = `./img/${imageType}/${colorId}/${model_id}.jpg`;
         }
 
-        download(legotElement.imgUrl, imgUrl, function () {
+        download(legoElement.imgUrl, imgUrl, function () {
             console.log('done');
         });
     });
