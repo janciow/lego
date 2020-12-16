@@ -7,16 +7,29 @@ const LeftSideNavigation = () => {
             <div className="sidebar-sticky">
                 <ul className="nav flex-column">
                     <li className="nav-item">
-                        <NavLink  className="nav-link" activeClassName="active" to="/sets">
+                        <NavLink  className="nav-link" to="/sets">
                             <span data-feather="home"></span> Lego zestawy <span className="sr-only">(current)</span>
                         </NavLink  >
                     </li>
 
                     <li className="nav-item">
-                        <NavLink  className="nav-link" activeClassName="active" to="/brick-balance">
+                        <NavLink  className="nav-link" to="/brick-balance">
                             <span data-feather="file"></span> Brick inventory
                         </NavLink  >
                     </li>
+
+                    <li className="nav-item">
+                        <NavLink  className="nav-link" to="/brick-balance/6274/pirates">
+                            <span data-feather="file"></span> Pirates
+                        </NavLink  >
+                    </li>
+
+                    <li className="nav-item">
+                        <NavLink  className="nav-link" to="/brick-balance/7675/sw">
+                            <span data-feather="file"></span> Star wars
+                        </NavLink  >
+                    </li>
+
 
                 </ul>
 
