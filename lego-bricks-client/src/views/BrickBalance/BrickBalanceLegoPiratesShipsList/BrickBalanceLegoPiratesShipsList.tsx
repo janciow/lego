@@ -14,7 +14,7 @@ interface BrickBalanceLegoPiratesShipsListProps {
 
 interface BrickBalanceLegoPiratesShipsListDispatchProps {
     getLegoPiratesShipBrickListById: (setId: string) => Promise<void>;
-    updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
+    updateLegoBrickTotalQuantity: (elementId: string,setId:string ,quantityTotal: number) => Promise<void>;
 }
 
 class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoPiratesShipsListProps & BrickBalanceLegoPiratesShipsListDispatchProps & RouteComponentProps<{ setId: string }>> {
@@ -36,13 +36,14 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
     }
 
     updateTotalValue = (elementId: string, setsId :string ,quantityTotal: number): any => {
-        this.props.updateLegoBrickTotalQuantity(elementId, quantityTotal)
-        const { setId } = this.props.match.params
-        this.props.getLegoPiratesShipBrickListById(setId);
+        this.props.updateLegoBrickTotalQuantity(elementId,setsId,quantityTotal).then(() => {
+            this.props.getLegoPiratesShipBrickListById(setsId);
+        })
     }
 
     render() {
         const { legoPiratesShipBrickList } = this.props
+        const { setId } = this.props.match.params
 
         return <>
             <h2>Lista klocków</h2>
@@ -106,7 +107,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                                         <td className="text-center align-middle">
                                             <QuantityTableInput
                                                 element_id={element_id}
-                                                lego_set_id={''}
+                                                lego_set_id={setId}
                                                 updateTotalValue={this.updateTotalValue}
                                             />
                                         </td>
@@ -132,7 +133,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         getLegoPiratesShipBrickListById: (setId: string) => dispatch(actions.getLegoPiratesShipBrickListById(setId)),
-        updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId, quantityTotal)),
+        updateLegoBrickTotalQuantity: (elementId: string, setId:string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId,setId ,quantityTotal)),
     }
 }
 

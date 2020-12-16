@@ -30,12 +30,12 @@ const QuantityTableInput: React.FC<QuantityTableInputProps> = ({ element_id, leg
                         <Field
                             name="quantity_total_value"
                             className={classNames('form-control', { 'is-invalid': errors.quantity_total_value })}
-                            placeholder="licza klockow"
+                            placeholder="ile"
                             type="text"
                         />
 
                         <div className="input-group-append">
-                            <button className="btn btn-outline-secondary" type="submit" disabled={isSubmitting} >total</button>
+                            <button className="btn btn-outline-secondary" type="submit" disabled={isSubmitting} >ustaw</button>
                         </div>
                         {errors.quantity_total_value && touched.quantity_total_value ? (
                             <div className="invalid-feedback">{errors.quantity_total_value}</div>

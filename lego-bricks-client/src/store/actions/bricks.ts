@@ -14,9 +14,9 @@ export const updateLegoBrickTotalQuantityFailed = () => {
     };
 };
 
-export const updateLegoBrickTotalQuantity = (elementId: string, quantityTotal: number) => {
+export const updateLegoBrickTotalQuantity = (elementId: string, setId: string, quantityTotal: number) => {
     return dispatch => {
-        setApi.updateLegoBrickQuantity(elementId, quantityTotal).then(response => {
+       return setApi.updateLegoBrickQuantity(elementId, quantityTotal).then(response => {
             dispatch(updateLegoBrickTotalQuantitySuccess(response));
         }).catch(error => {
             dispatch(updateLegoBrickTotalQuantityFailed());

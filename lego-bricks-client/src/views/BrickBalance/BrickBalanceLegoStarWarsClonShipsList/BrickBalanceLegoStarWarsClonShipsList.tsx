@@ -14,7 +14,7 @@ interface BrickBalanceLegoStarWarsClonShipsListProps {
 
 interface BrickBalanceLegoStarWarsClonShipssListDispatchProps {
     getLegoStarWarsCloneShipBrickListById: (setId: string) => Promise<void>;
-    updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => Promise<void>;
+    updateLegoBrickTotalQuantity: (elementId: string,setIds: string ,quantityTotal: number) => Promise<void>;
 }
 
 class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<BrickBalanceLegoStarWarsClonShipsListProps & BrickBalanceLegoStarWarsClonShipssListDispatchProps & RouteComponentProps<{ setId: string }>> {
@@ -36,13 +36,14 @@ class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<BrickBalanc
     }
 
     updateTotalValue = (elementId: string, setIds: string, quantityTotal: number): any => {
-        this.props.updateLegoBrickTotalQuantity(elementId, quantityTotal)
-        const { setId } = this.props.match.params
-        this.props.getLegoStarWarsCloneShipBrickListById(setId);
+        this.props.updateLegoBrickTotalQuantity(elementId, setIds,quantityTotal).then(() => {
+            this.props.getLegoStarWarsCloneShipBrickListById(setIds);
+        })
     }
 
     render() {
         const { legoStarWarsCloneShipBrickList } = this.props
+        const { setId } = this.props.match.params
 
         return <>
             <h2>Lista klocków</h2>
@@ -95,7 +96,7 @@ class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<BrickBalanc
                                         <td className="text-center align-middle">
                                             <QuantityTableInput
                                                 element_id={element_id}
-                                                lego_set_id={'lego_set_id'}
+                                                lego_set_id={setId}
                                                 updateTotalValue={this.updateTotalValue}
                                             />
                                         </td>
@@ -121,7 +122,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         getLegoStarWarsCloneShipBrickListById: (setId: string) => dispatch(actions.getLegoStarWarsCloneShipBrickListById(setId)),
-        updateLegoBrickTotalQuantity: (elementId: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId, quantityTotal)),
+        updateLegoBrickTotalQuantity: (elementId: string, setId: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId,setId ,quantityTotal)),
     }
 }
 

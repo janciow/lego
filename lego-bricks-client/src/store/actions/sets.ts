@@ -85,9 +85,8 @@ export const updateLegoBrickQuantityInSetFailed = () => {
 
 export const updateLegoBrickQuantityInSet = (elementId: string, setId:string ,quantityInSet: number) => {
     return dispatch => {
-        setApi.updateLegoBrickQuantityInSet(elementId, setId, quantityInSet).then(response => {
+       return setApi.updateLegoBrickQuantityInSet(elementId, setId, quantityInSet).then(response => {
             dispatch(updateLegoBrickQuantityInSetSuccess(response));
-            return true
         }).catch(error => {
             dispatch(updateLegoBrickQuantityInSetFailed());
         })
