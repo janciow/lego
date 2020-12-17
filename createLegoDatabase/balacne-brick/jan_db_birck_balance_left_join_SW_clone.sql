@@ -51,7 +51,7 @@ WHERE (
 	and (
 		s7675.lego_set_id = "7676"
 		or s7676.lego_set_id = "7676"
-		or s10195.lego_set_id = "10195"
+		or s10195.lego_set_id = "7676"
 
 	)
 ORDER BY brick.description;

@@ -1,4 +1,5 @@
 use jan_db;
+-- getSetBricksById
 SELECT * FROM lego_set_parts
 LEFT JOIN brick
 ON lego_set_parts.brick_id = brick.element_id

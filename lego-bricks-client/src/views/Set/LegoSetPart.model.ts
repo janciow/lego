@@ -12,6 +12,7 @@ class LegoSetPart {
         public quantity: number | null,
         public quantity_free_bricks: number | null,
         public quantity_in_set: number | null,
+        public quantity_in_sets_total: number | null,
         public quantity_total: number | null,
     ) { }
 }
