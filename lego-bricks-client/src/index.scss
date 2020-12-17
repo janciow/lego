@@ -18,7 +18,7 @@ code {
 
 // https://codepen.io/balajidesigner/pen/YBKQBK?editors=1100
 .table-responsive {
-  height:80vh;  
+  height: calc(100vh - 80px);  
   overflow:scroll;
 
   thead tr:nth-child(2) th{
@@ -30,7 +30,7 @@ code {
 }
 
 .table-responsive-1 {
-  height:80vh;  
+  height: calc(100vh - 80px); 
   overflow:scroll;
 
   thead tr:nth-child(1) th{

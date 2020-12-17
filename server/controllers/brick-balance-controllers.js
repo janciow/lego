@@ -43,25 +43,41 @@ const legoPiratesShipBrickList = (req, res) => {
   ];
 
   const q = `
-	SELECT img_pathname,
-		price,
-		model_id,
-		element_id,
-		quantity_total,
-		${bbQueryBuilder.bbSelect(['6286','6285','10210', '4195','6243','6274','70413'])}
-		brick.description
-	FROM brick
-		${bbQueryBuilder.bbLeftJoin('6286')}
-		${bbQueryBuilder.bbLeftJoin('6285')}
-		${bbQueryBuilder.bbLeftJoin('10210')}
-		${bbQueryBuilder.bbLeftJoin('4195')}
-		${bbQueryBuilder.bbLeftJoin('6243')}
-		${bbQueryBuilder.bbLeftJoin('6274')}
-		${bbQueryBuilder.bbLeftJoin('70413')}
-	WHERE 
-		${bbQueryBuilder.bbWhere(['6286','6285','10210', '4195','6243','6274','70413'])}
-	ORDER BY brick.description;
-    `;
+    SELECT img_pathname,
+      price,
+      model_id,
+      element_id,
+      quantity_total,
+      ${bbQueryBuilder.bbSelect([
+        "6286",
+        "6285",
+        "10210",
+        "4195",
+        "6243",
+        "6274",
+        "70413",
+      ])}
+      brick.description
+    FROM brick
+      ${bbQueryBuilder.bbLeftJoin("6286")}
+      ${bbQueryBuilder.bbLeftJoin("6285")}
+      ${bbQueryBuilder.bbLeftJoin("10210")}
+      ${bbQueryBuilder.bbLeftJoin("4195")}
+      ${bbQueryBuilder.bbLeftJoin("6243")}
+      ${bbQueryBuilder.bbLeftJoin("6274")}
+      ${bbQueryBuilder.bbLeftJoin("70413")}
+    WHERE 
+      ${bbQueryBuilder.bbWhere([
+        "6286",
+        "6285",
+        "10210",
+        "4195",
+        "6243",
+        "6274",
+        "70413",
+      ])}
+    ORDER BY brick.description;
+  `;
 
   connection.query(q, qParams, function (err, results) {
     if (err) throw err;
@@ -76,21 +92,21 @@ const legoSWCloneShipBrickList = (req, res) => {
   const qParams = [setNumber, setNumber, setNumber];
 
   const q = `
-	SELECT img_pathname,
-		price,
-		model_id,
-		element_id,
-		quantity_total,
-		${bbQueryBuilder.bbSelect(['7675','7676','10195'])}
-		brick.description
-	FROM brick
-		${bbQueryBuilder.bbLeftJoin('7675')}
-		${bbQueryBuilder.bbLeftJoin('7676')}
-		${bbQueryBuilder.bbLeftJoin('10195')}
-	WHERE
-		${bbQueryBuilder.bbWhere(['7675','7676','10195'])}
-	ORDER BY brick.description;
-    `;
+    SELECT img_pathname,
+      price,
+      model_id,
+      element_id,
+      quantity_total,
+      ${bbQueryBuilder.bbSelect(["7675", "7676", "10195"])}
+      brick.description
+    FROM brick
+      ${bbQueryBuilder.bbLeftJoin("7675")}
+      ${bbQueryBuilder.bbLeftJoin("7676")}
+      ${bbQueryBuilder.bbLeftJoin("10195")}
+    WHERE
+      ${bbQueryBuilder.bbWhere(["7675", "7676", "10195"])}
+    ORDER BY brick.description;
+  `;
 
   connection.query(q, qParams, function (err, results) {
     if (err) throw err;

@@ -9,7 +9,7 @@ class Layout extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <LeftSideNavigation />
-                        <main role="main" className="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                        <main role="main" className="col-md-9 ml-sm-auto col-lg-10 pt-3">
                             <div id="myChart">{this.props.children}</div>
                         </main>
                     </div>
