@@ -17,7 +17,7 @@ interface SetDetailsProps {
 
 interface SetDetailDispatchProps {
     getLegoSetDetails: (legoSetNumber: string) => Promise<void>;
-    getSetBricksBySetId: (legoSetNumber: string) => Promise<void>;
+    getSetBricksBySetId: (legoSetNumber: string, resetTable?: boolean) => Promise<void>;
     updateLegoBrickTotalQuantity: (elementId: string, setIds: string, quantityTotal: number) => Promise<void>;
     updateLegoBrickQuantityInSet: (elementId: string, setIds: string, quantityTotal: number) => Promise<void>;
 }
@@ -27,7 +27,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
     componentDidMount() {
         const { setId } = this.props.match.params
         this.props.getLegoSetDetails(setId)
-        this.props.getSetBricksBySetId(setId)
+        this.props.getSetBricksBySetId(setId, true)
     }
 
     updateTotalValue = (elementId: string, setIds: string, quantityTotal: number): any => {
@@ -104,7 +104,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch): SetDetailDispatchProps => {
     return {
         getLegoSetDetails: (legoSetNumber: string) => dispatch(actions.getLegoSetDetails(legoSetNumber)),
-        getSetBricksBySetId: (legoSetNumber: string) => dispatch(actions.getSetBricksBySetId(legoSetNumber)),
+        getSetBricksBySetId: (legoSetNumber: string, resetTable?: boolean) => dispatch(actions.getSetBricksBySetId(legoSetNumber, resetTable)),
         updateLegoBrickTotalQuantity: (elementId: string, setIds: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId, setIds, quantityTotal)),
         updateLegoBrickQuantityInSet: (elementId: string, setIds: string, quantityTotal: number) => dispatch(actions.updateLegoBrickQuantityInSet(elementId, setIds, quantityTotal)),
     }

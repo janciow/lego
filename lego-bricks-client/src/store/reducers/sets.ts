@@ -34,7 +34,14 @@ const getSetBricksBySetId = (state, action) => {
     }
 };
 
-const updatLegoBrickQuantityInSet = (state, action) => {
+const getSetBricksBySetIdInit = (state, action) => {
+    return {
+        ...state,
+        setBricks: []
+    }
+};
+
+const updateLegoBrickQuantityInSet = (state, action) => {
     return {
         ...state,
         message: action.message
@@ -45,8 +52,9 @@ const reducer = (state: SetsState = initialState, action) => {
     switch (action.type) {
         case ActionTypes.SET_LIST_GET: return getSetsList(state, action);
         case ActionTypes.SET_DETAILS_GET: return getSetDetails(state, action);
+        case ActionTypes.SET_BRICKS_LIST_GET_INIT: return getSetBricksBySetIdInit(state, action);
         case ActionTypes.SET_BRICKS_LIST_GET: return getSetBricksBySetId(state, action);
-        case ActionTypes.UPDAT_LEGO_SET_BRICK_QUANTITY_IN_SET: return updatLegoBrickQuantityInSet(state, action);
+        case ActionTypes.UPDAT_LEGO_SET_BRICK_QUANTITY_IN_SET: return updateLegoBrickQuantityInSet(state, action);
         default: return state;
     }
 };

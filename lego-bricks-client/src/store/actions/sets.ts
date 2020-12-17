@@ -60,8 +60,12 @@ export const getSetBricksBySetIdFailed = () => {
     };
 };
 
-export const getSetBricksBySetId = (legoSetId: string) => {
+export const getSetBricksBySetId = (legoSetId: string, resetTable: boolean = false) => {
     return dispatch => {
+
+        resetTable &&  dispatch({
+            type: ActionTypes.SET_BRICKS_LIST_GET_INIT,
+        })
         setApi.fetchSetBricksBySetId(legoSetId).then(response => {
             dispatch(getSetBricksBySetIdSuccess(response.data.items));
         }).catch(error => {
