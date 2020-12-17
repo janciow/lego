@@ -49,7 +49,6 @@ const LeftSideNavigation = () => {
             </div>
         </nav>
     )
-
 }
 
 export default LeftSideNavigation;
