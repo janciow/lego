@@ -6,7 +6,7 @@ import QuantityTableInput from '../../../components/inputs/QuantityTableInput';
 import * as actions from '../../../store/actions/index';
 import * as selectors from '../../../store/selectors/index';
 import { BrickBalanceLegoPiratesShip } from '../types';
-import classNames  from 'classnames';
+import classNames from 'classnames';
 
 interface BrickBalanceLegoPiratesShipsListProps {
     legoPiratesShipBrickList: BrickBalanceLegoPiratesShip[]
@@ -14,7 +14,7 @@ interface BrickBalanceLegoPiratesShipsListProps {
 
 interface BrickBalanceLegoPiratesShipsListDispatchProps {
     getLegoPiratesShipBrickListById: (setId: string) => Promise<void>;
-    updateLegoBrickTotalQuantity: (elementId: string,setId:string ,quantityTotal: number) => Promise<void>;
+    updateLegoBrickTotalQuantity: (elementId: string, setId: string, quantityTotal: number) => Promise<void>;
 }
 
 class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoPiratesShipsListProps & BrickBalanceLegoPiratesShipsListDispatchProps & RouteComponentProps<{ setId: string }>> {
@@ -35,8 +35,8 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
         this.props.history.push(`/brick-balance/${setNumber}/pirates`)
     }
 
-    updateTotalValue = (elementId: string, setsId :string ,quantityTotal: number): any => {
-        this.props.updateLegoBrickTotalQuantity(elementId,setsId,quantityTotal).then(() => {
+    updateTotalValue = (elementId: string, setsId: string, quantityTotal: number): any => {
+        this.props.updateLegoBrickTotalQuantity(elementId, setsId, quantityTotal).then(() => {
             this.props.getLegoPiratesShipBrickListById(setsId);
         })
     }
@@ -46,7 +46,17 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
         const { setId } = this.props.match.params
 
         return <>
-            <h2>Lista klocków</h2>
+            <div>  <h2>Lista klocków</h2>
+                <ul className="nav">
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6274')}><span className="nav-link" >Clipper</span></li>
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6285')}><span className="nav-link" >Barracuda</span></li>
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6286')}><span className="nav-link" >Skull</span></li>
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '10210')}><span className="nav-link" >Imperial</span></li>
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6243')}><span className="nav-link" >Brickbeard's</span></li>
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '4195')}><span className="nav-link" >Queen</span></li>
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '70413')}><span className="nav-link" >Bounty</span></li>
+                </ul>
+            </div>
             <div className="table-responsive">
                 <table className="table table-striped table-sm table-bordered table-responsive-2">
                     <thead>
@@ -91,7 +101,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                         {
                             legoPiratesShipBrickList.map(({ quantity_total, model_id, set_6286_q, set_6285_q, total_q, img_pathname, description, set_10210_q, set_4195_q, set_6274_q, set_6243_q, element_id, set_70413_q }) => {
                                 return (
-                                    <tr key={element_id} className={classNames( { 'table-success':  quantity_total !== null && quantity_total >= total_q  })}>
+                                    <tr key={element_id} className={classNames({ 'table-success': quantity_total !== null && quantity_total >= total_q })}>
 
                                         <td className="text-center align-middle"><img src={`/img/${img_pathname}`} alt={'ddd'}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>
@@ -133,7 +143,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         getLegoPiratesShipBrickListById: (setId: string) => dispatch(actions.getLegoPiratesShipBrickListById(setId)),
-        updateLegoBrickTotalQuantity: (elementId: string, setId:string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId,setId ,quantityTotal)),
+        updateLegoBrickTotalQuantity: (elementId: string, setId: string, quantityTotal: number) => dispatch(actions.updateLegoBrickTotalQuantity(elementId, setId, quantityTotal)),
     }
 }
 
