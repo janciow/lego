@@ -92,7 +92,7 @@ class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<BrickBalanc
                                 return (
                                     <tr key={element_id} className={classNames({ 'table-success': quantity_total !== null && quantity_total >= total_q })}>
 
-                                        <td className="text-center align-middle"><img src={`/img/${img_pathname}`} alt={'ddd'}></img></td>
+                                        <td className="text-center align-middle"><img src={`/img/${img_pathname}`} alt={img_pathname}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>
                                         <td className="text-center align-middle">{set_7675_q}</td>
                                         <td className="text-center align-middle">{set_7676_q}</td>
