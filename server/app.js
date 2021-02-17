@@ -69,18 +69,6 @@ app.use("/api/auth", authRoutes);
 mongoose
   .connect(MONGODB_URI)
   .then((result) => {
-    User.findOne().then((user) => {
-      if (!user) {
-        const user = new User({
-          name: "jan",
-          email: "jan@test.com",
-          cart: {
-            items: [],
-          },
-        });
-        user.save();
-      }
-    });
     app.listen(8080, function () {
       console.log("Server running on 8080!");
     });
