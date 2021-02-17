@@ -15,6 +15,7 @@ const getBricks = (req, res) => {
     connection.query(q, function (err, results) {
         if (err) throw err;
         const lego_sets = results;
+      console.log('req.session.isLoggedIn ',req.session.isLoggedIn);  
         res.status(200);
         res.json({ items: lego_sets });
     });
