@@ -1,15 +1,16 @@
 const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 
-exports.getLogin = (req, res, next) => {
-  // res.render('auth/login', {
-  //   path: '/login',
-  //   pageTitle: 'Login',
-  //   isAuthenticated: false
-  // });
+const MESSAGES = require("../constans/constans");
 
-  res.status(200);
-  res.json({ data: "getLogin ok" });
+exports.getLogin = (req, res, next) => {
+  if (!req.session.isLoggedIn) {
+    res.status(403);
+    res.json({ data: MESSAGES.forbidden });
+  } else {
+    res.status(200);
+    res.json({ data: MESSAGES.logged });
+  }
 };
 
 exports.getSignup = (req, res, next) => {
