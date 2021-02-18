@@ -1,6 +1,10 @@
 const MESSAGES = require("../constans/constans");
 
 const jwt = require('jsonwebtoken');
+const dotenv = require("dotenv");
+
+dotenv.config();
+const JWT_SECRET = process.env.JWT_SECRET;
 
 module.exports = (req, res, next) => {
   const authHeader = req.get('Authorization');
@@ -12,7 +16,7 @@ module.exports = (req, res, next) => {
   const token = authHeader.split(' ')[1];
   let decodedToken;
   try {
-    decodedToken = jwt.verify(token, 'somesupersecretsecret');
+    decodedToken = jwt.verify(token, JWT_SECRET);
   } catch (err) {
     err.statusCode = 500;
     throw err;

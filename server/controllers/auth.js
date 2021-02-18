@@ -3,6 +3,9 @@ const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 
 const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");
+dotenv.config();
+const JWT_SECRET = process.env.JWT_SECRET;
 
 exports.getLogin = (req, res, next) => {
   res.status(200);
@@ -41,7 +44,7 @@ exports.postLogin = (req, res, next) => {
           email: loadedUser.email,
           userId: loadedUser._id.toString(),
         },
-        "somesupersecretsecret",
+        JWT_SECRET,
         { expiresIn: "1h" }
       );
       res.status(200).json({ token: token, userId: loadedUser._id.toString() });
