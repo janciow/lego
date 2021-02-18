@@ -1,31 +1,15 @@
+const { validationResult } = require('express-validator/check');
 const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 
-const MESSAGES = require("../constans/constans");
+const jwt = require("jsonwebtoken");
 
 exports.getLogin = (req, res, next) => {
-  if (!req.session.isLoggedIn) {
-    res.status(403);
-    res.json({ data: MESSAGES.forbidden });
-  } else {
-    res.status(200);
-    res.json({ data: MESSAGES.logged });
-  }
+  res.status(200);
+  res.json({ data: 'ok' });
 };
 
 exports.getSignup = (req, res, next) => {
-  // let message = req.flash('error');
-  // if (message.length > 0) {
-  //   message = message[0];
-  // } else {
-  //   message = null;
-  // }
-  // res.render('auth/signup', {
-  //   path: '/signup',
-  //   pageTitle: 'Signup',
-  //   errorMessage: message
-  // });
-
   res.status(200);
   res.json({ data: "getSignup ok" });
 };
@@ -33,81 +17,71 @@ exports.getSignup = (req, res, next) => {
 exports.postLogin = (req, res, next) => {
   const email = req.body.email;
   const password = req.body.password;
+  let loadedUser;
 
   User.findOne({ email: email })
     .then((user) => {
       if (!user) {
-        res.status(401);
-        res.json({
-          data: "Invalid email or password.",
-        });
-      } else {
-        bcrypt
-          .compare(password, user.password)
-          .then((doMatch) => {
-            if (doMatch) {
-              req.session.isLoggedIn = true;
-              req.session.user = user;
-              return req.session.save((err) => {
-                res.status(200);
-                res.json({
-                  data: "login successful ",
-                });
-              });
-            }
-            res.status(401);
-            res.json({
-              data: "Invalid email or password.",
-            });
-          })
-          .catch((err) => {
-            res.status(500);
-            res.json({
-              data: "buuu",
-            });
-          });
+        const error = new Error("A user with this email could not be found.");
+        error.statusCode = 401;
+        throw error;
       }
+      loadedUser = user;
+      return bcrypt.compare(password, user.password);
     })
-    .catch((err) => console.log(err));
-};
-
-exports.postSignup = (req, res, next) => {
-  const email = req.body.email;
-  const password = req.body.password;
-  const confirmPassword = req.body.confirmPassword;
-
-  User.findOne({ email: email })
-    .then((userDoc) => {
-      if (userDoc) {
-        res.status(401);
-        res.json({
-          data: "E-Mail exists already, please pick a different one",
-        });
-      } else {
-        return bcrypt
-          .hash(password, 12)
-          .then((hashedPassword) => {
-            const user = new User({
-              email: email,
-              password: hashedPassword,
-            });
-            return user.save();
-          })
-          .then((result) => {
-            res.status(201);
-            res.json({ data: `ok` });
-          });
+    .then((isEqual) => {
+      if (!isEqual) {
+        const error = new Error("Wrong password!");
+        error.statusCode = 401;
+        throw error;
       }
+
+      const token = jwt.sign(
+        {
+          email: loadedUser.email,
+          userId: loadedUser._id.toString(),
+        },
+        "somesupersecretsecret",
+        { expiresIn: "1h" }
+      );
+      res.status(200).json({ token: token, userId: loadedUser._id.toString() });
     })
     .catch((err) => {
-      console.log(err);
+      if (!err.statusCode) {
+        err.statusCode = 500;
+      }
+      next(err);
     });
 };
 
-exports.postLogout = (req, res, next) => {
-  req.session.destroy((err) => {
-    console.log(err);
-    res.status(200);
-    res.json({ data: "ok postLogout" });
-  });
+exports.postSignup = (req, res, next) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    const error = new Error('Validation failed.');
+    error.statusCode = 422;
+    error.data = errors.array();
+    throw error;
+  }
+  const email = req.body.email;
+  const name = req.body.name;
+  const password = req.body.password;
+  bcrypt
+    .hash(password, 12)
+    .then(hashedPw => {
+      const user = new User({
+        email: email,
+        password: hashedPw,
+        name: name
+      });
+      return user.save();
+    })
+    .then(result => {
+      res.status(201).json({ message: 'User created!', userId: result._id });
+    })
+    .catch(err => {
+      if (!err.statusCode) {
+        err.statusCode = 500;
+      }
+      next(err);
+    });
 };

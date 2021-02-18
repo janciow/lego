@@ -3,8 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const mongoose = require("mongoose");
-const session = require("express-session");
-const MongoDBStore = require("connect-mongodb-session")(session);
+// const session = require("express-session");
+// const MongoDBStore = require("connect-mongodb-session")(session);
 
 const User = require("./models/user");
 
@@ -12,10 +12,10 @@ dotenv.config();
 const MONGODB_URI = process.env.MONGODB_URI;
 
 const app = express();
-const store = new MongoDBStore({
-  uri: MONGODB_URI,
-  collection: "sessions",
-});
+// const store = new MongoDBStore({
+//   uri: MONGODB_URI,
+//   collection: "sessions",
+// });
 
 app.use(bodyParser.json());
 app.use((req, res, next) => {
@@ -24,32 +24,32 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
   );
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, DELETE");
+  res.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET, POST, PATCH, DELETE");
   next();
 });
 
 app.use(express.static(__dirname + "/public"));
 
-app.use(
-  session({
-    secret: "my secret",
-    resave: false,
-    saveUninitialized: false,
-    store: store,
-  })
-);
+// app.use(
+//   session({
+//     secret: "my secret",
+//     resave: false,
+//     saveUninitialized: false,
+//     store: store,
+//   })
+// );
 
-app.use((req, res, next) => {
-  if (!req.session.user) {
-    return next();
-  }
-  User.findById(req.session.user._id)
-    .then((user) => {
-      req.user = user;
-      next();
-    })
-    .catch((err) => console.log(err));
-});
+// app.use((req, res, next) => {
+//   if (!req.session.user) {
+//     return next();
+//   }
+//   User.findById(req.session.user._id)
+//     .then((user) => {
+//       req.user = user;
+//       next();
+//     })
+//     .catch((err) => console.log(err));
+// });
 
 const setsRoutes = require("./routes/sets-routes");
 const brickBalanceRoutes = require("./routes/brick-balance-routes");
@@ -65,6 +65,14 @@ app.use("/api/sets", setsRoutes);
 app.use("/api/brick-balance", brickBalanceRoutes);
 app.use("/api/bricks", bricksRoutes);
 app.use("/api/auth", authRoutes);
+
+app.use((error, req, res, next) => {
+  console.log(error);
+  const status = error.statusCode || 500;
+  const message = error.message;
+  const data = error.data;
+  res.status(status).json({ message: message, data: data });
+});
 
 mongoose
   .connect(MONGODB_URI)
