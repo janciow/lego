@@ -4,13 +4,10 @@ const bodyParser = require("body-parser");
 
 const mongoose = require("mongoose");
 
-const User = require("./models/user");
-
 dotenv.config();
 const MONGODB_URI = process.env.MONGODB_URI;
 
 const app = express();
-
 
 app.use(bodyParser.json());
 app.use((req, res, next) => {
@@ -19,7 +16,10 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
   );
-  res.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET, POST, PATCH, DELETE");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "OPTIONS, GET, POST, PATCH, DELETE"
+  );
   next();
 });
 
@@ -49,7 +49,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
     app.listen(8080, function () {
       console.log("Server running on 8080!");
