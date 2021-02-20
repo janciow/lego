@@ -1,6 +1,7 @@
 const dotenv = require("dotenv");
 const express = require("express");
 const bodyParser = require("body-parser");
+const { graphqlHTTP } = require('express-graphql');
 
 const mongoose = require("mongoose");
 
@@ -25,20 +26,31 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname + "/public"));
 
-const setsRoutes = require("./routes/sets-routes");
-const brickBalanceRoutes = require("./routes/brick-balance-routes");
-const bricksRoutes = require("./routes/bricks-routes");
-const authRoutes = require("./routes/auth");
+// const setsRoutes = require("./routes/sets-routes");
+// const brickBalanceRoutes = require("./routes/brick-balance-routes");
+// const bricksRoutes = require("./routes/bricks-routes");
+// const authRoutes = require("./routes/auth");
 
-app.get("/api", (req, res) => {
-  res.status(200);
-  res.json({ message: "ok ok " });
-});
+// app.get("/api", (req, res) => {
+//   res.status(200);
+//   res.json({ message: "ok ok " });
+// });
 
-app.use("/api/sets", setsRoutes);
-app.use("/api/brick-balance", brickBalanceRoutes);
-app.use("/api/bricks", bricksRoutes);
-app.use("/api/auth", authRoutes);
+// app.use("/api/sets", setsRoutes);
+// app.use("/api/brick-balance", brickBalanceRoutes);
+// app.use("/api/bricks", bricksRoutes);
+// app.use("/api/auth", authRoutes);
+
+const graphqlSchema = require("./graphql/schema.js");
+const graphqlResolvers = require("./graphql/resolvers.js");
+
+app.use(
+  "/graphql",
+  graphqlHTTP({
+    schema: graphqlSchema,
+    rootValue: graphqlResolvers
+  })
+);
 
 app.use((error, req, res, next) => {
   console.log(error);
