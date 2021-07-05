@@ -88,8 +88,10 @@ const legoPiratesShipBrickList = (req, res) => {
 };
 
 const legoSWCloneShipBrickList = (req, res) => {
+  const orderBy = req.query.orderBy || 'brick.description';
+  const orderDirection = req.query.orderDirection || 'asc';
   const setNumber = req.params.setNumber;
-  const qParams = [setNumber, setNumber, setNumber];
+  const qParams = [setNumber, setNumber, setNumber, setNumber];
 
   const q = `
     SELECT img_pathname,
@@ -97,15 +99,16 @@ const legoSWCloneShipBrickList = (req, res) => {
       model_id,
       element_id,
       quantity_total,
-      ${bbQueryBuilder.bbSelect(["7675", "7676", "10195"])}
+      ${bbQueryBuilder.bbSelect(["7675", "7676", "10195", "75151"])}
       brick.description
     FROM brick
       ${bbQueryBuilder.bbLeftJoin("7675")}
       ${bbQueryBuilder.bbLeftJoin("7676")}
       ${bbQueryBuilder.bbLeftJoin("10195")}
+      ${bbQueryBuilder.bbLeftJoin("75151")}
     WHERE
-      ${bbQueryBuilder.bbWhere(["7675", "7676", "10195"])}
-    ORDER BY brick.description;
+      ${bbQueryBuilder.bbWhere(["7675", "7676", "10195", "75151"])}
+    ORDER BY ${orderBy} ${orderDirection};
   `;
 
   connection.query(q, qParams, function (err, results) {
