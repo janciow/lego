@@ -15,10 +15,11 @@ const prepareSetsData = (legoElements, setNumber) => {
             colorId = 999
         }
 
+
         brickSetData.push([
             +setNumber,
             '' + model_id + colorId,
-            +legotElement.quantity
+            +legoElement.quantity
         ])
     });
 

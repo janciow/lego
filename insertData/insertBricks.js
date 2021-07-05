@@ -16,12 +16,17 @@ const set_parts_query = "INSERT IGNORE INTO lego_set_parts (lego_set_id, brick_i
 
 // const legoSets = ['6286', '6285', '10210', '4195', '6243', '6274', '70413'];
 
-const legoSets = ['7675', '7676', '10195'];
+const legoSets = [
+    // '7675',
+    //  '7676',
+    //   '10195',
+       '75151',
+    ];
 
 
 legoSets.forEach(legoSetNumber => {
 
-    getImages(legoSetNumber);
+    // getImages(legoSetNumber);
 
     let legoSetBrickModel = JSON.parse(fs.readFileSync(`jsons_lego/${legoSetNumber}.json`));
 

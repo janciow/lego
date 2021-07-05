@@ -48,13 +48,13 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 
-mongoose
-  .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => {
+// mongoose
+//   .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then((result) => {
     app.listen(8080, function () {
       console.log("Server running on 8080!");
     });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+  // })
+  // .catch((err) => {
+  //   console.log(err);
+  // });

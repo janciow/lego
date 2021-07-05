@@ -10,6 +10,11 @@ const prepareBrickData = (legoElements) => {
         const { pathname } = new URL(legoElement.imgUrl);
         const urlPathParam = legoElement.imgUrl.split('/');
         let colorId = urlPathParam[4];
+
+        if (colorId === 'noImage.gif') {
+            colorId = 1;
+        }
+
         const model_id = legoElement.model_id.replace('(Inv)', '').trim();
 
         colors.push([
