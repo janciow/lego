@@ -6,8 +6,6 @@ import * as actions from '../../../store/actions/index';
 import * as selectors from '../../../store/selectors/index';
 import LegoSet from '../LegoSet.model';
 
-
-
 interface SetListProps {
     sets: LegoSet[]
 }

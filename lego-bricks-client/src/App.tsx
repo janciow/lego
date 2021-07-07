@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Layout from './hoc/Layout/Layout';
+import BrickList from './views/Brick/BrickList/BrickList';
 import SetList from './views/Set/SetList/SetList';
 import SetDetail from './views/Set/SetDetail/SetDetail';
 import SetListSimple from './views/BrickBalance/SetListSimple/SetListSimple';
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Layout>
           <Switch>
+          <Route path="/bricks" exact> <BrickList /></Route>
             <Route path="/sets" exact> <SetList /></Route>
             <Route path="/sets/add" exact> <SetDetail /></Route>
             <Route path="/sets/:setId" exact> <SetDetail /></Route>

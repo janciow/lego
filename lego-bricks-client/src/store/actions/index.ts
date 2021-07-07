@@ -9,5 +9,9 @@ export {
     getLegoStarWarsCloneShipBrickListById
 } from './brick-balance';
 export {
+    getBricksList,
     updateLegoBrickTotalQuantity,
 } from './bricks';
+export {
+    getColorsList,
+} from './colors';
