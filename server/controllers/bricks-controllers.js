@@ -11,12 +11,28 @@ const getBrickCount = (req, res) => {
 };
 
 const getBricks = (req, res) => {
-  const q = "SELECT * FROM brick";
+  const page = req.query.page || 1;
+  const limit = req.query.limit || 300;
+  const colorId = req.query.colorId || null;
+
+  const form = (page - 1) * limit;
+  const to = page * limit;
+  const pageSQL = page && limit ? `LIMIT ${form}, ${limit}` : "";
+  const colorSQL = colorId !== null ? `WHERE color_exact_id = ${colorId}` : '';
+
+  const q = `SELECT * FROM brick ${colorSQL} ${pageSQL}`;
   connection.query(q, function (err, results) {
     if (err) throw err;
     const lego_sets = results;
     res.status(200);
-    res.json({ items: lego_sets });
+    res.json({
+      items: lego_sets, 
+      page: {
+        form,
+        to,
+        count: lego_sets.length
+      }
+    });
   });
 };
 

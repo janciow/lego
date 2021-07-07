@@ -28,6 +28,7 @@ app.use(express.static(__dirname + "/public"));
 const setsRoutes = require("./routes/sets-routes");
 const brickBalanceRoutes = require("./routes/brick-balance-routes");
 const bricksRoutes = require("./routes/bricks-routes");
+const colorsRoutes = require("./routes/colors-routes");
 const authRoutes = require("./routes/auth");
 
 app.get("/api", (req, res) => {
@@ -38,6 +39,7 @@ app.get("/api", (req, res) => {
 app.use("/api/sets", setsRoutes);
 app.use("/api/brick-balance", brickBalanceRoutes);
 app.use("/api/bricks", bricksRoutes);
+app.use("/api/colors", colorsRoutes);
 app.use("/api/auth", authRoutes);
 
 app.use((error, req, res, next) => {

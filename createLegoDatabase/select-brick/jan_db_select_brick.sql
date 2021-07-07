@@ -1,4 +1,3 @@
 use jan_db;
-SELECT *
-FROM brick;
-    
+SELECT  * FROM brick  LIMIT 1, 20
+    ;
