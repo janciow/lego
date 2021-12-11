@@ -48,6 +48,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
         return <>
             <div>  <h2>Lista klocków</h2>
                 <ul className="nav">
+                    <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6271')}><span className="nav-link" >Imperial FS</span></li>
                     <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6274')}><span className="nav-link" >Clipper</span></li>
                     <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6285')}><span className="nav-link" >Barracuda</span></li>
                     <li className="nav-item cursor-pointer" onClick={this.goToSet.bind(this, '6286')}><span className="nav-link" >Skull</span></li>
@@ -64,13 +65,14 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
 
                             <th></th>
                             <th></th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6274')}>Clipper</th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6285')}>Barracuda</th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6286')}>Skull</th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '10210')}>Imperial</th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6243')}>Brickbeard's</th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '4195')}>Queen</th>
-                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '70413')}>Bounty</th>
+                            <th>set_6271_q</th>
+                            <th>set_6274_q</th>
+                            <th>set_6285_q</th>
+                            <th>set_6286_q</th>
+                            <th>set_10210_q</th>
+                            <th>set_6243_q</th>
+                            <th>set_4195_q</th>
+                            <th>set_70413_q</th>
 
                             <th></th>
                             <th></th>
@@ -82,13 +84,17 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
 
                             <th>Obrazek</th>
                             <th>model_id</th>
-                            <th>set_6274_q</th>
-                            <th>set_6285_q</th>
-                            <th>set_6286_q</th>
-                            <th>set_10210_q</th>
-                            <th>set_6243_q</th>
-                            <th>set_4195_q</th>
-                            <th>set_70413_q</th>
+            
+
+
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6271')}>imperisl fs</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6274')}>Clipper</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6285')}>Barracuda</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6286')}>Skull</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '10210')}>Imperial</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6243')}>Brickbeard's</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '4195')}>Queen</th>
+                            <th className="cursor-pointer" onClick={this.goToSet.bind(this, '70413')}>Bounty</th>
 
                             <th>Suma potrzebnych do zestawów</th>
                             <th>Wszystkie klocki</th>
@@ -99,12 +105,13 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                     </thead>
                     <tbody>
                         {
-                            legoPiratesShipBrickList.map(({ quantity_total, model_id, set_6286_q, set_6285_q, total_q, img_pathname, description, set_10210_q, set_4195_q, set_6274_q, set_6243_q, element_id, set_70413_q }) => {
+                            legoPiratesShipBrickList.map(({ quantity_total, model_id, set_6286_q, set_6271_q ,set_6285_q, total_q, img_pathname, description, set_10210_q, set_4195_q, set_6274_q, set_6243_q, element_id, set_70413_q }) => {
                                 return (
                                     <tr key={element_id} className={classNames({ 'table-success': quantity_total !== null && quantity_total >= total_q })}>
 
                                         <td className="text-center align-middle"><img src={`/img/${img_pathname}`} alt={img_pathname}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>
+                                        <td className="text-center align-middle">{set_6271_q}</td>
                                         <td className="text-center align-middle">{set_6274_q}</td>
                                         <td className="text-center align-middle">{set_6285_q}</td>
                                         <td className="text-center align-middle">{set_6286_q}</td>

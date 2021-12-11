@@ -50,10 +50,15 @@ const setLinks = [
   //   url:
   //     "https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=10195&itemSeq=1",
   // },
+  // {
+  //   setNumber: "75151",
+  //   url:
+  //     "https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=75151&itemSeq=1",
+  // },
   {
-    setNumber: "75151",
+    setNumber: "6271",
     url:
-      "https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=75151&itemSeq=1",
+      "https://www.bricklink.com/catalogItemInv.asp?fromForm=Y&itemType=S&itemNo=6271&itemSeq=1",
   },
 ];
 

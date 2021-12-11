@@ -12,7 +12,7 @@ const initialState = {
 const getColorExactList = (state, action) => {
     return {
         ...state,
-        setsList: action.colors
+        colorExactList: action.colors
     }
 };
 

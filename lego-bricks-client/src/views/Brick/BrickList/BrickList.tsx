@@ -10,10 +10,16 @@ import LegoBrick from "../../Set/LegoBrick.model";
 
 interface BrickListProps {
   bricks: LegoBrick[];
+  colors: any[];
+}
+
+export interface BrickQueryParams {
+    colorId: string
 }
 
 interface BrickListDispatchProps {
-    getBricksList: () => Promise<void>;
+  getBricksList: (qp?: BrickQueryParams) => Promise<void>;
+  getColorsList: () => Promise<void>;
 }
 
 class BrickList extends React.Component<
@@ -21,18 +27,37 @@ class BrickList extends React.Component<
 > {
   componentDidMount() {
     this.props.getBricksList();
+    this.props.getColorsList();
   }
 
-//   goToSet = (setNumber: string) => {
-//     this.props.history.push(`sets/${setNumber}`);
-//   };
+  handleChange = (event) => {
+    console.log(event.target.value);
+
+    this.props.getBricksList({colorId: event.target.value});
+    
+  }
 
   render() {
-    const { bricks } = this.props;
+    const { bricks, colors } = this.props;
 
     return (
       <>
         <h2>Lista klocków</h2>
+
+        <div className="input-group mb-3">
+          <select className="custom-select" id="inputGroupSelect02" onChange={this.handleChange}>
+            <option selected value="">Choose...</option>
+
+            {colors.map(({ id, name }, index) => {
+              return <option value={id}>{name}</option>;
+            })}
+          </select>
+          <div className="input-group-append">
+            <label className="input-group-text" htmlFor="inputGroupSelect02">
+              Options
+            </label>
+          </div>
+        </div>
         <div className="table-responsive">
           <table className="table table-striped table-sm table-bordered table-responsive-1">
             <thead>
@@ -53,15 +78,10 @@ class BrickList extends React.Component<
               {bricks.map(
                 (
                   {
-                    element_id,
-                    // brick_id,
                     img_pathname,
                     description,
-                    // quantity,
                     model_id,
-                    // quantity_in_set,
                     quantity_total,
-                    // lego_set_id,
                     quantity_free_bricks,
                   },
                   index
@@ -122,7 +142,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getBricksList: () => dispatch(actions.getBricksList()),
+    getBricksList: (qp) => dispatch(actions.getBricksList(qp)),
+    getColorsList: () => dispatch(actions.getColorsList()),
   };
 };
 

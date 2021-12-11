@@ -40,6 +40,7 @@ const legoPiratesShipBrickList = (req, res) => {
     setNumber,
     setNumber,
     setNumber,
+    setNumber,
   ];
 
   const q = `
@@ -49,6 +50,7 @@ const legoPiratesShipBrickList = (req, res) => {
       element_id,
       quantity_total,
       ${bbQueryBuilder.bbSelect([
+        "6271",
         "6286",
         "6285",
         "10210",
@@ -59,6 +61,7 @@ const legoPiratesShipBrickList = (req, res) => {
       ])}
       brick.description
     FROM brick
+      ${bbQueryBuilder.bbLeftJoin("6271")}
       ${bbQueryBuilder.bbLeftJoin("6286")}
       ${bbQueryBuilder.bbLeftJoin("6285")}
       ${bbQueryBuilder.bbLeftJoin("10210")}
@@ -68,6 +71,7 @@ const legoPiratesShipBrickList = (req, res) => {
       ${bbQueryBuilder.bbLeftJoin("70413")}
     WHERE 
       ${bbQueryBuilder.bbWhere([
+        "6271",
         "6286",
         "6285",
         "10210",

@@ -1,5 +1,6 @@
 import { ActionTypes } from "../actionTypes";
 import * as setApi from "../../api/brick.api"
+import { BrickQueryParams } from "../../views/Brick/BrickList/BrickList";
 
 export const updateLegoBrickTotalQuantitySuccess = (response) => {
     return {
@@ -37,9 +38,9 @@ export const getBricksFailed = () => {
     };
 };
 
-export const getBricksList = () => {
+export const getBricksList = (qp: BrickQueryParams) => {
     return dispatch => {
-        setApi.fetchBrickList().then(response => {
+        setApi.fetchBrickList(qp).then(response => {
             dispatch(getBricksSuccess(response.data.items));
         }).catch(error => {
             dispatch(getBricksFailed());

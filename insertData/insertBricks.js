@@ -2,7 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const fs = require('fs');
-const getImages = require('./insertBricks/getImages');
+// const getImages = require('./insertBricks/getImages');
 const prepareBrickData = require('./insertBricks/prepareBrickData');
 const prepareSetsData = require('./insertBricks/prepareSetsData');
 const connection = require('../db/db_connect');
@@ -20,7 +20,8 @@ const legoSets = [
     // '7675',
     //  '7676',
     //   '10195',
-       '75151',
+    //    '75151',
+       '6271',
     ];
 
 

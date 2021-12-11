@@ -4,6 +4,7 @@ export interface BrickBalanceLegoPiratesShip {
     model_id: string;
     element_id: string;
     set_6286_q: null | number;
+    set_6271_q: null | number;
     set_6285_q: null | number;
     set_10210_q: null | number;
     set_4195_q: null | number;

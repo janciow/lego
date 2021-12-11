@@ -1,7 +1,10 @@
 import api from ".";
+// import { BrickQueryParams } from "../views/Brick/BrickList/BrickList";
 
-export const fetchBrickList = () => {
-    return api.get(`bricks`)
+export const fetchBrickList = (data: any) => {
+    const searchParams = data ? new URLSearchParams(data) : '';
+
+    return api.get(`bricks?${searchParams}`)
 }
 
 export const updateLegoBrickQuantity = (elementId: string, quantityTotal: number) => {
