@@ -20,7 +20,7 @@ function App() {
             <Route path="/sets/add" exact> <SetDetail /></Route>
             <Route path="/sets/:setId" exact> <SetDetail /></Route>
             <Route path="/sets/:setId/edit" exact> <div>set edit</div></Route>
-            <Route path="/brick-balance" exact>  <SetListSimple/></Route>
+            <Route path="/sets-list" exact>  <SetListSimple/></Route>
             <Route path="/brick-balance/:setId/pirates" exact> <BrickBalanceLegoPiratesShipsList /></Route>
             <Route path="/brick-balance/:setId/sw" exact> <BrickBalanceLegoStarWarsClonShipsList /></Route>
             <Route path="/" exact >  <div>1</div></Route>
