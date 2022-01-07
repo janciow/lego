@@ -1,9 +1,10 @@
 const connection = require("../../db/db_connect");
+const { queryError } = require("../middleware/error");
 
 const getBrickCount = (req, res) => {
   const q = "SELECT COUNT(*) AS count FROM brick";
   connection.query(q, function (err, results) {
-    if (err) throw err;
+    if (err) queryError(err, res);
     const count = results[0].count;
     res.status(200);
     res.json({ message: count });
@@ -22,7 +23,7 @@ const getBricks = (req, res) => {
 
   const q = `SELECT * FROM brick ${colorSQL} ${pageSQL}`;
   connection.query(q, function (err, results) {
-    if (err) throw err;
+    if (err) queryError(err, res);
     const lego_sets = results;
     res.status(200);
     res.json({
@@ -40,7 +41,7 @@ const getBrickById = (req, res) => {
   const brickId = req.params.brickId;
   const q = "SELECT * FROM brick WHERE brick.element_id = ?";
   connection.query(q, [brickId], function (error, results) {
-    if (error) throw error;
+    if (err) queryError(err, res);
     const brick = results;
     res.status(200);
     res.json({ data: brick });

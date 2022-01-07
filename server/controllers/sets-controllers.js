@@ -14,7 +14,7 @@ const getSetById = (req, res) => {
     const setNumber = req.params.setNumber;
     const q = "SELECT * FROM lego_sets WHERE lego_sets.set_number = ?";
     connection.query(q, [setNumber], function (error, results) {
-        if (error) throw error;
+        if (err) queryError(err, res);
         const set = results;
         res.status(200);
         res.json({ data: set });
@@ -54,7 +54,7 @@ const getSetBricksById = (req, res) => {
     
     `
     connection.query(q, [setNumber], function (error, results) {
-        if (error) throw error;
+        if (err) queryError(err, res);
         const setBricks = results;
         res.status(200);
         res.json({ items: setBricks });

@@ -11,7 +11,7 @@ const getColors = (req, res) => {
 
   const q = `SELECT * FROM color_exact WHERE name IS NOT NULL ${pageSQL}`;
   connection.query(q, function (err, results) {
-    if (err) throw err;
+    if (err) queryError(err, res);
     const lego_colors = results;
     res.status(200);
     res.json({
