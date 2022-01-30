@@ -68,7 +68,7 @@ class SetDetail extends React.Component<SetDetailsProps & SetDetailDispatchProps
                         {
                             setBricks.map(({ element_id, brick_id, img_pathname, description, quantity, model_id, quantity_in_set, quantity_total, lego_set_id, quantity_free_bricks }, index) => {
                                 return (
-                                    <tr key={brick_id} className={classNames({ 'table-success': quantity !== null && quantity_total !== null && quantity_total >= quantity })}>
+                                    <tr key={brick_id} className={classNames({ 'table-success': quantity !== null && quantity_in_set !== null && quantity_in_set >= quantity })}>
                                         <td>{index + 1}</td>
                                         <td><img src={`/img/${img_pathname}`} alt={model_id?.toString() || ''}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>

@@ -35,6 +35,10 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
         this.props.history.push(`/brick-balance/${setNumber}/pirates`)
     }
 
+    getClassNameAllBrickBuildIn = (setNumber: string, listRow) => {
+        return classNames('text-center align-middle', { 'all-bricks-build-in': listRow[`set_${setNumber}_q_build_in`] !== null && listRow[`set_${setNumber}_q`] !== null && listRow[`set_${setNumber}_q_build_in`] >= listRow[`set_${setNumber}_q`] })
+    }
+
     updateTotalValue = (elementId: string, setsId: string, quantityTotal: number): any => {
         this.props.updateLegoBrickTotalQuantity(elementId, setsId, quantityTotal).then(() => {
             this.props.getLegoPiratesShipBrickListById(setsId);
@@ -84,7 +88,7 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
 
                             <th>Obrazek</th>
                             <th>model_id</th>
-            
+
 
 
                             <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6271')}>imperisl fs</th>
@@ -95,8 +99,9 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                             <th className="cursor-pointer" onClick={this.goToSet.bind(this, '6243')}>Brickbeard's</th>
                             <th className="cursor-pointer" onClick={this.goToSet.bind(this, '4195')}>Queen</th>
                             <th className="cursor-pointer" onClick={this.goToSet.bind(this, '70413')}>Bounty</th>
-
+                            <th>Suma wbudowanych</th>
                             <th>Suma potrzebnych do zestawów</th>
+                            <th>wolne klocki</th>
                             <th>Wszystkie klocki</th>
                             <th>aktualizacja</th>
                             <th>Opis</th>
@@ -105,23 +110,71 @@ class BrickBalanceLegoPiratesShipsList extends React.Component<BrickBalanceLegoP
                     </thead>
                     <tbody>
                         {
-                            legoPiratesShipBrickList.map(({ quantity_total, model_id, set_6286_q, set_6271_q ,set_6285_q, total_q, img_pathname, description, set_10210_q, set_4195_q, set_6274_q, set_6243_q, element_id, set_70413_q }) => {
+                            legoPiratesShipBrickList.map((listRow) => {
+
+
+                                const {
+                                    quantity_total,
+                                    model_id,
+                                    set_6286_q,
+                                    set_6271_q,
+                                    set_6285_q,
+                                    q_total_needed,
+                                    img_pathname,
+                                    description,
+                                    set_10210_q,
+                                    set_4195_q,
+                                    set_6274_q,
+                                    set_6243_q,
+                                    element_id,
+                                    set_70413_q,
+                                    sum_quantity_build_in,
+                                } = listRow
+
                                 return (
-                                    <tr key={element_id} className={classNames({ 'table-success': quantity_total !== null && quantity_total >= total_q })}>
+                                    <tr key={element_id} className={classNames({ 'table-success': quantity_total !== null && quantity_total >= q_total_needed })}>
 
                                         <td className="text-center align-middle"><img src={`/img/${img_pathname}`} alt={img_pathname}></img></td>
                                         <td className="text-center align-middle">{model_id}</td>
-                                        <td className="text-center align-middle">{set_6271_q}</td>
-                                        <td className="text-center align-middle">{set_6274_q}</td>
-                                        <td className="text-center align-middle">{set_6285_q}</td>
-                                        <td className="text-center align-middle">{set_6286_q}</td>
-                                        <td className="text-center align-middle">{set_10210_q}</td>
-                                        <td className="text-center align-middle">{set_6243_q}</td>
-                                        <td className="text-center align-middle">{set_4195_q}</td>
-                                        <td className="text-center align-middle">{set_70413_q}</td>
-                                        <td className="text-center align-middle">{total_q}</td>
-                                        <td className="text-center align-middle">{quantity_total}</td>
-                                        <td className="text-center align-middle">
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('6271', listRow)}
+                                        >{set_6271_q}</td>
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('6274', listRow)}
+                                        >{set_6274_q}</td>
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('6285', listRow)}
+                                        >{set_6285_q}</td>
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('6286', listRow)}
+                                        >{set_6286_q}</td>
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('10210', listRow)}
+                                        >{set_10210_q}</td>
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('6243', listRow)}
+                                        >{set_6243_q}</td>
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('4195', listRow)}
+                                        >{set_4195_q}</td>
+                                        <td
+                                            className={this.getClassNameAllBrickBuildIn('70413', listRow)}
+                                        >{set_70413_q}</td>
+                                        <td
+                                            className="text-center align-middle"
+                                        >{sum_quantity_build_in}</td>
+
+                                        <td
+                                            className={classNames('text-center align-middle', { 'all-bricks-build-in': sum_quantity_build_in >= q_total_needed })}
+
+
+                                        >{q_total_needed}</td>
+
+
+                                        <td className="text-center align-middle" >{(quantity_total === null ? 0 : quantity_total) - sum_quantity_build_in}</td>
+
+                                        <td className="text-center align-middle" >{quantity_total}</td>
+                                        <td className="text-center align-middle" >
                                             <QuantityTableInput
                                                 element_id={element_id}
                                                 lego_set_id={setId}

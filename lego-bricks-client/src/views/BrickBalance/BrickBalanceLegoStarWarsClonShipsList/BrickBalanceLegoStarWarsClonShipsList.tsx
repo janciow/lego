@@ -241,7 +241,7 @@ class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<
                   set_7676_q,
                   set_75151_q,
                   set_10195_q,
-                  total_q,
+                  q_total_needed,
                   img_pathname,
                   description,
                   element_id,
@@ -251,7 +251,7 @@ class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<
                       key={element_id}
                       className={classNames({
                         "table-success":
-                          quantity_total !== null && quantity_total >= total_q,
+                          quantity_total !== null && quantity_total >= q_total_needed,
                       })}
                     >
                       <td className="text-center align-middle">
@@ -270,7 +270,7 @@ class BrickBalanceLegoStarWarsCloneShipsList extends React.Component<
                         {set_75151_q}
                       </td>
 
-                      <td className="text-center align-middle">{total_q}</td>
+                      <td className="text-center align-middle">{q_total_needed}</td>
                       <td className="text-center align-middle">
                         {quantity_total}
                       </td>

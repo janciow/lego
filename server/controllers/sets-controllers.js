@@ -1,4 +1,5 @@
 const connection = require("../../db/db_connect");
+const { queryError } = require("../middleware/error");
 
 const getSets = (req, res) => {
     const q = "SELECT * FROM lego_sets";
@@ -13,7 +14,7 @@ const getSets = (req, res) => {
 const getSetById = (req, res) => {
     const setNumber = req.params.setNumber;
     const q = "SELECT * FROM lego_sets WHERE lego_sets.set_number = ?";
-    connection.query(q, [setNumber], function (error, results) {
+    connection.query(q, [setNumber], function (err, results) {
         if (err) queryError(err, res);
         const set = results;
         res.status(200);
@@ -53,7 +54,7 @@ const getSetBricksById = (req, res) => {
     ORDER BY brick.description;
     
     `
-    connection.query(q, [setNumber], function (error, results) {
+    connection.query(q, [setNumber], function (err, results) {
         if (err) queryError(err, res);
         const setBricks = results;
         res.status(200);

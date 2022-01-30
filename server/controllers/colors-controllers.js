@@ -1,4 +1,5 @@
 const connection = require("../../db/db_connect");
+const { queryError } = require("../middleware/error");
 
 const getColors = (req, res) => {
   const page = req.query.page || 1;
