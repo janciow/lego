@@ -1,4 +1,4 @@
-const connection = require("../../db/db_connect");
+const connection = require("../db_connect");
 const { queryError } = require("../middleware/error");
 
 const getColors = (req, res) => {

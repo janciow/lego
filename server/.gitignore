@@ -1,0 +1,10 @@
+node_modules/
+img/
+img_temp/
+
+vscode/
+settings.json
+xxx.sql
+
+.env
+lego-bricks-client/debug.log

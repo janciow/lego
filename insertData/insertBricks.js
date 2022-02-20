@@ -5,7 +5,7 @@ const fs = require('fs');
 // const getImages = require('./insertBricks/getImages');
 const prepareBrickData = require('./insertBricks/prepareBrickData');
 const prepareSetsData = require('./insertBricks/prepareSetsData');
-const connection = require('../db/db_connect');
+const connection = require('../../db/db_connect');
 
 
 const colorQuery = "INSERT IGNORE INTO color_exact (id,name,color_family_id) VALUES ?"

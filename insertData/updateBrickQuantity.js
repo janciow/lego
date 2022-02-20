@@ -1,7 +1,7 @@
 const dotenv = require("dotenv");
 dotenv.config();
 const fs = require('fs');
-const connection = require('../db/db_connect');
+const connection = require('../../db/db_connect');
 
 let brickData = JSON.parse(fs.readFileSync(`jsons_lego/db_tables_json/brick_table.json`));
 

@@ -1,10 +1,8 @@
-const dotenv = require("dotenv");
-const express = require("express");
-const bodyParser = require("body-parser");
-// const mongoose = require("mongoose");
+import dotenv from "dotenv"
+import express, { Request, Response, NextFunction } from "express"
+import bodyParser from "body-parser"
 
 dotenv.config();
-// const MONGODB_URI = process.env.MONGODB_URI;
 
 const app = express();
 
@@ -41,21 +39,17 @@ app.use("/api/bricks", bricksRoutes);
 app.use("/api/colors", colorsRoutes);
 app.use("/api/auth", authRoutes);
 
-app.use((error, req, res, next) => {
-  console.log(error);
-  const status = error.statusCode || 500;
+app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
+  // console.log(error);
+  const status = 500 //error.statusCode || 500;
   const message = error.message;
-  const data = error.data;
-  res.status(status).json({ message: message, data: data });
+  // const data = error.data ;
+  res.status(status).json({
+    message: message,
+    // data: data 
+  });
 });
 
-// mongoose
-//   .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-//   .then((result) => {
-    app.listen(8080, function () {
-      console.log("Server running on 8080!");
-    });
-  // })
-  // .catch((err) => {
-  //   console.log(err);
-  // });
+app.listen(8080, function () {
+  console.log("Server running on 8080!");
+});
