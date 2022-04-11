@@ -1,7 +1,7 @@
-const express = require("express");
-const bricksControllers = require("../controllers/bricks-controllers");
+import express from "express"
+import bricksControllers from "../controllers/bricks-controllers"
 
-const isAuth = require("../middleware/is-auth");
+import isAuth from "../middleware/is-auth"
 
 const router = express.Router();
 
@@ -15,4 +15,4 @@ router.patch(
   bricksControllers.updateLegoBrickQuantity
 );
 
-module.exports = router;
+export default router;

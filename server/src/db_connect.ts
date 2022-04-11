@@ -1,5 +1,8 @@
 import mysql from 'mysql'
 
+import  dotenv from 'dotenv'
+dotenv.config();
+
 const APP_SECRET = process.env.APP_SECRET;
 const APP_USER = process.env.APP_USER;
 const APP_DB_NAME = process.env.APP_DB_NAME;
@@ -13,13 +16,15 @@ const db_config = {
   multipleStatements: true,
 };
 
-let connection;
+console.log(db_config)
+
+let connection: any;
 
 function handleDisconnect() {
   connection = mysql.createConnection(db_config); // Recreate the connection, since
   // the old one cannot be reused.
 
-  connection.connect(function (err) {
+  connection.connect(function (err: any) {
     // The server is either down
     if (err) {
       // or restarting (takes a while sometimes).
@@ -28,7 +33,7 @@ function handleDisconnect() {
     } // to avoid a hot loop, and to allow our node script to
   }); // process asynchronous requests in the meantime.
   // If you're also serving http, display a 503 error.
-  connection.on("error", function (err) {
+  connection.on("error", function (err: any) {
     console.log("db error", err);
     if (err.code === "PROTOCOL_CONNECTION_LOST") {
       // Connection to the MySQL server is usually
@@ -49,4 +54,4 @@ function handleDisconnect() {
 
 handleDisconnect();
 
-module.exports = connection;
+export default connection

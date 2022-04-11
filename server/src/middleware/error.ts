@@ -1,5 +1,6 @@
+import express, { Request, Response } from "express"
 
-const queryError = (err, res) => {
+const queryError: any = (err: any, res: Response) => {
     console.log(JSON.stringify(err));
 
     res.json({
@@ -10,4 +11,4 @@ const queryError = (err, res) => {
     return
 };
 
-exports.queryError = queryError;
+export default queryError

@@ -1,9 +1,10 @@
-const connection = require("../db_connect");
-const { queryError } = require("../middleware/error");
+import connection  from "../db_connect"
+import  queryError   from "../middleware/error"
+import express, { Request, Response, NextFunction } from "express"
 
-const getSets = (req, res) => {
+const getSets = (req: Request, res: Response) => {
     const q = "SELECT * FROM lego_sets";
-    connection.query(q, function (err, results) {
+    connection.query(q, function (err: any , results: any) {
         if (err) throw err;
         const lego_sets = results;
         res.status(200);
@@ -11,10 +12,10 @@ const getSets = (req, res) => {
     });
 }
 
-const getSetById = (req, res) => {
+const getSetById = (req: Request, res: Response) => {
     const setNumber = req.params.setNumber;
     const q = "SELECT * FROM lego_sets WHERE lego_sets.set_number = ?";
-    connection.query(q, [setNumber], function (err, results) {
+    connection.query(q, [setNumber], function (err: any, results: any) {
         if (err) queryError(err, res);
         const set = results;
         res.status(200);
@@ -22,7 +23,7 @@ const getSetById = (req, res) => {
     });
 }
 
-const getSetBricksById = (req, res) => {
+const getSetBricksById = (req: Request, res: Response) => {
     const sortBy = req.query.sortBy || '';
     const sortDir = req.query.sortDir || 'ASC';
     const setNumber = req.params.setNumber;
@@ -54,7 +55,7 @@ const getSetBricksById = (req, res) => {
     ORDER BY brick.description;
     
     `
-    connection.query(q, [setNumber], function (err, results) {
+    connection.query(q, [setNumber], function (err: any, results: any) {
         if (err) queryError(err, res);
         const setBricks = results;
         res.status(200);
@@ -62,30 +63,37 @@ const getSetBricksById = (req, res) => {
     });
 }
 
-const createLegoSet = async (req, res, next) => {
+const createLegoSet = async (req: Request, res: Response, next: NextFunction) => {
     const { setNumber, name, description } = req.body;
     const setData = [[setNumber, name, description]]
     const setQuery = "INSERT IGNORE INTO lego_sets (set_number, name, description) VALUES ?";
-    connection.query(setQuery, [setData], function (error, result) {
+    connection.query(setQuery, [setData], function (error: any, result: any) {
         res.status(200);
         res.json({ data: result });
     });
 
 }
 
-const updateLegoBrickQuantityInSet = async (req, res, next) => {
+const updateLegoBrickQuantityInSet = async (req: Request, res: Response, next: NextFunction) => {
     const { elementId, legoSetId } = req.params;   
     const { quantityInSet } = req.body;
     const setData = [[quantityInSet], [legoSetId], [elementId]]
     const setQuery = "UPDATE lego_set_parts SET quantity_in_set = ? WHERE lego_set_id = ? and brick_id = ?";
-    connection.query(setQuery, setData, function (error, result) {
+    connection.query(setQuery, setData, function (error: any, result: any) {
         res.status(200);
         res.json({ message: result.message });
     });
 }
 
-exports.getSets = getSets;
-exports.getSetById = getSetById;
-exports.getSetBricksById = getSetBricksById;
-exports.createLegoSet = createLegoSet;
-exports.updateLegoBrickQuantityInSet = updateLegoBrickQuantityInSet;
+export default {
+    getSets,
+    getSetById,
+    getSetBricksById,
+    createLegoSet,
+    updateLegoBrickQuantityInSet
+}
+// exports.getSets = getSets;
+// exports.getSetById = getSetById;
+// exports.getSetBricksById = getSetBricksById;
+// exports.createLegoSet = createLegoSet;
+// exports.updateLegoBrickQuantityInSet = updateLegoBrickQuantityInSet;

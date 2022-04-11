@@ -2,6 +2,14 @@ import dotenv from "dotenv"
 import express, { Request, Response, NextFunction } from "express"
 import bodyParser from "body-parser"
 
+
+import setsRoutes  from "./routes/sets-routes"
+import brickBalanceRoutes  from"./routes/brick-balance-routes"
+import bricksRoutes  from"./routes/bricks-routes"
+import colorsRoutes  from"./routes/colors-routes"
+import authRoutes  from"./routes/auth"
+
+
 dotenv.config();
 
 const app = express();
@@ -22,11 +30,7 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname + "/public"));
 
-const setsRoutes = require("./routes/sets-routes");
-const brickBalanceRoutes = require("./routes/brick-balance-routes");
-const bricksRoutes = require("./routes/bricks-routes");
-const colorsRoutes = require("./routes/colors-routes");
-const authRoutes = require("./routes/auth");
+
 
 app.get("/api", (req, res) => {
   res.status(200);

@@ -1,12 +1,13 @@
-const MESSAGES = require("../constans/constans");
+import MESSAGES from "../constans/constans"
+import express, { Request, Response, NextFunction } from "express"
 
-const jwt = require('jsonwebtoken');
-const dotenv = require("dotenv");
+import jwt  from 'jsonwebtoken';
+import dotenv  from "dotenv"
 
 dotenv.config();
 const JWT_SECRET = process.env.JWT_SECRET;
 
-module.exports = (req, res, next) => {
+ const isAuth = (req: Request, res: Response, next: NextFunction) => {
   // const authHeader = req.get('Authorization');
   // if (!authHeader) {
   //   const error = new Error('Not authenticated.');
@@ -29,3 +30,5 @@ module.exports = (req, res, next) => {
   // req.userId = decodedToken.userId;
   next();
 };
+
+export default isAuth

@@ -1,4 +1,4 @@
-const bbLeftJoin = (legoSetNumber) => {
+const bbLeftJoin = (legoSetNumber: number) => {
   return `
 	LEFT JOIN (
 		SELECT brick.element_id as brick_id,
@@ -25,11 +25,11 @@ const bbLeftJoin = (legoSetNumber) => {
 //     or s10195.lego_set_id = ?
 // )
 
-const bbWhere = (legoSetNumbers) => {
+const bbWhere = (legoSetNumbers: any[]) => {
   return `
       (
         ${legoSetNumbers
-          .map((setNum, index) => {
+          .map((setNum: number, index) => {
             return index === 0
               ? `s${setNum}.quantity IS NOT NULL`
               : `or s${setNum}.quantity IS NOT NULL`;
@@ -58,7 +58,7 @@ const bbWhere = (legoSetNumbers) => {
 // s7676.lego_set_id,
 // s10195.lego_set_id,
 
-const bbSelect = (legoSetNumbers) => {
+const bbSelect = (legoSetNumbers: any[]) => {
   return `
       
         ${legoSetNumbers
@@ -99,6 +99,10 @@ const bbSelect = (legoSetNumbers) => {
     `;
 };
 
-exports.bbLeftJoin = bbLeftJoin;
-exports.bbWhere = bbWhere;
-exports.bbSelect = bbSelect;
+
+
+export default {
+  bbLeftJoin,
+  bbWhere,
+  bbSelect
+}

@@ -1,32 +1,34 @@
-const { validationResult } = require('express-validator');
-const User = require("../models/user");
-const bcrypt = require("bcryptjs");
+import express, { Request, Response, NextFunction } from 'express'
 
-const jwt = require("jsonwebtoken");
-const dotenv = require("dotenv");
+import { validationResult }  from 'express-validator'
+import User from "../models/user";
+import bcrypt  from "bcryptjs";
+ 
+import jwt  from "jsonwebtoken"
+import dotenv  from "dotenv"
 
 dotenv.config();
 const JWT_SECRET = process.env.JWT_SECRET;
 
-exports.getLogin = (req, res, next) => {
+const getLogin = (req: Request, res: Response, next: NextFunction) => {
   res.status(200);
   res.json({ data: 'ok' });
 };
 
-exports.getSignup = (req, res, next) => {
+const getSignup = (req: Request, res: Response, next: NextFunction) => {
   res.status(200);
   res.json({ data: "getSignup ok" });
 };
 
-exports.postLogin = (req, res, next) => {
+const postLogin = (req: Request, res: Response, next: NextFunction) => {
   const email = req.body.email;
   const password = req.body.password;
-  let loadedUser;
+  let loadedUser: any;
 
   User.findOne({ email: email })
-    .then((user) => {
+    .then((user: any) => {
       if (!user) {
-        const error = new Error("A user with this email could not be found.");
+        const error: any = new Error("A user with this email could not be found.");
         error.statusCode = 401;
         throw error;
       }
@@ -35,17 +37,17 @@ exports.postLogin = (req, res, next) => {
     })
     .then((isEqual) => {
       if (!isEqual) {
-        const error = new Error("Wrong password!");
+        const error: any = new Error("Wrong password!");
         error.statusCode = 401;
         throw error;
       }
 
-      const token = jwt.sign(
+      const token: any = jwt.sign(
         {
           email: loadedUser.email,
           userId: loadedUser._id.toString(),
         },
-        JWT_SECRET,
+        JWT_SECRET!,
         { expiresIn: "1h" }
       );
       res.status(200).json({ token: token, userId: loadedUser._id.toString() });
@@ -58,10 +60,10 @@ exports.postLogin = (req, res, next) => {
     });
 };
 
-exports.postSignup = (req, res, next) => {
-  const errors = validationResult(req);
+const postSignup = (req: Request, res: Response, next: NextFunction) => {
+  const errors: any = validationResult(req);
   if (!errors.isEmpty()) {
-    const error = new Error('Validation failed.');
+    const error: any = new Error('Validation failed.');
     error.statusCode = 422;
     error.data = errors.array();
     throw error;
@@ -89,3 +91,10 @@ exports.postSignup = (req, res, next) => {
       next(err);
     });
 };
+
+export default {
+  getLogin,
+  postSignup,
+  postLogin,
+  getSignup,
+}

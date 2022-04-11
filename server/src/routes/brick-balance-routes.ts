@@ -1,8 +1,7 @@
-const express = require("express");
-const { check, oneOf, validationResult } = require("express-validator");
-const brickBalanceControllers = require("../controllers/brick-balance-controllers");
-
-const isAuth = require("../middleware/is-auth");
+import express from "express"
+import { check, oneOf, validationResult }  from "express-validator"
+import  brickBalanceControllers from "../controllers/brick-balance-controllers"
+import isAuth  from "../middleware/is-auth"
 
 const router = express.Router();
 
@@ -33,4 +32,4 @@ router.get(
   brickBalanceControllers.legoSWCloneShipBrickList
 );
 
-module.exports = router;
+export default router;

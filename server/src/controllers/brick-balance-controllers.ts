@@ -1,12 +1,14 @@
-const connection = require("../db_connect");
-const { queryError } = require("../middleware/error");
+import express, { Request, Response, NextFunction } from 'express'
+
+import connection from "../db_connect"
+import queryError from "../middleware/error"
 const bbQueryBuilder = require("./query-utils/brick-balance");
 
-const getBrickBalanceBySet = (req, res) => {
+const getBrickBalanceBySet = (req: Request, res: Response, next: NextFunction) => {
   const setNumber = req.params.setNumber;
   const q =
     "SELECT brick.img_pathname,  brick.model_id, lego_set_parts.quantity FROM lego_set_parts LEFT JOIN brick ON lego_set_parts.brick_id = brick.element_id WHERE lego_set_parts.lego_set_id = ? ORDER BY brick.description";
-  connection.query(q, [setNumber], function (err, results) {
+  connection.query(q, [setNumber], function (err:any , results: any) {
     if (err) queryError(err, res);
     const lego_set_brick_balance = results;
     res.status(200);
@@ -14,14 +16,14 @@ const getBrickBalanceBySet = (req, res) => {
   });
 };
 
-const getBrickBalanceBySetsGroup = (req, res) => {
-  const { setsGroup } = req.query;
-  const setsGroupArray = setsGroup.split(",");
+const getBrickBalanceBySetsGroup = (req: Request, res: Response, next: NextFunction) => {
+  const { setsGroup } = req.query as any;
+  const setsGroupArray = setsGroup && setsGroup.split(",");
 
   const q =
     "SELECT brick.img_pathname,  brick.model_id, lego_set_parts.quantity FROM lego_set_parts LEFT JOIN brick ON lego_set_parts.brick_id = brick.element_id  WHERE lego_set_parts.lego_set_id = ? ORDER BY brick.description";
 
-  connection.query(`${q};${q}`, setsGroupArray, function (err, results) {
+  connection.query(`${q};${q}`, setsGroupArray, function (err: any, results: any) {
     if (err) queryError(err, res);
     const items1 = results[0];
     const items2 = results[1];
@@ -30,7 +32,7 @@ const getBrickBalanceBySetsGroup = (req, res) => {
   });
 };
 
-const legoPiratesShipBrickList = (req, res) => {
+const legoPiratesShipBrickList = (req: Request, res: Response, next: NextFunction) => {
   const setNumber = req.params.setNumber;
   const qParams = [
     setNumber,
@@ -83,7 +85,7 @@ const legoPiratesShipBrickList = (req, res) => {
     ORDER BY brick.description;
   `;
 
-  connection.query(q, qParams, function (err, results) {
+  connection.query(q, qParams, function (err: any, results: any) {
     if (err) queryError(err, res);
 
     res.status(200);
@@ -91,7 +93,7 @@ const legoPiratesShipBrickList = (req, res) => {
   });
 };
 
-const legoSWCloneShipBrickList = (req, res) => {
+const legoSWCloneShipBrickList = (req: Request, res: Response, next: NextFunction) => {
   const orderBy = req.query.orderBy || 'brick.description';
   const orderDirection = req.query.orderDirection || 'asc';
   const setNumber = req.params.setNumber;
@@ -115,7 +117,7 @@ const legoSWCloneShipBrickList = (req, res) => {
     ORDER BY ${orderBy} ${orderDirection};
   `;
 
-  connection.query(q, qParams, function (err, results) {
+  connection.query(q, qParams, function (err:any , results: any) {
     if (err) queryError(err, res);
 
     res.status(200);
@@ -123,7 +125,14 @@ const legoSWCloneShipBrickList = (req, res) => {
   });
 };
 
-exports.getBrickBalanceBySet = getBrickBalanceBySet;
-exports.getBrickBalanceBySetsGroup = getBrickBalanceBySetsGroup;
-exports.legoPiratesShipBrickList = legoPiratesShipBrickList;
-exports.legoSWCloneShipBrickList = legoSWCloneShipBrickList;
+// exports.getBrickBalanceBySet = getBrickBalanceBySet;
+// exports.getBrickBalanceBySetsGroup = getBrickBalanceBySetsGroup;
+// exports.legoPiratesShipBrickList = legoPiratesShipBrickList;
+// exports.legoSWCloneShipBrickList = legoSWCloneShipBrickList;
+
+export default {
+  getBrickBalanceBySet,
+  getBrickBalanceBySetsGroup,
+  legoPiratesShipBrickList,
+  legoSWCloneShipBrickList,
+}
