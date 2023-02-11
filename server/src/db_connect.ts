@@ -16,8 +16,6 @@ const db_config = {
   multipleStatements: true,
 };
 
-console.log(db_config)
-
 let connection: any;
 
 function handleDisconnect() {

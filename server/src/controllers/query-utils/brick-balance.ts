@@ -1,4 +1,4 @@
-const bbLeftJoin = (legoSetNumber: number) => {
+const bbLeftJoin = (legoSetNumber: string) => {
   return `
 	LEFT JOIN (
 		SELECT brick.element_id as brick_id,

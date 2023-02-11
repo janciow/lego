@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction } from 'express'
 
 import connection from "../db_connect"
 import queryError from "../middleware/error"
-const bbQueryBuilder = require("./query-utils/brick-balance");
+import bbQueryBuilder from "./query-utils/brick-balance"
 
 const getBrickBalanceBySet = (req: Request, res: Response, next: NextFunction) => {
   const setNumber = req.params.setNumber;
@@ -98,6 +98,8 @@ const legoSWCloneShipBrickList = (req: Request, res: Response, next: NextFunctio
   const orderDirection = req.query.orderDirection || 'asc';
   const setNumber = req.params.setNumber;
   const qParams = [setNumber, setNumber, setNumber, setNumber];
+
+  console.log(qParams, 'ddddd')
 
   const q = `
     SELECT img_pathname,

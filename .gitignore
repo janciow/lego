@@ -1,6 +1,7 @@
 node_modules/
 img/
 img_temp/
+common
 
 vscode/
 settings.json

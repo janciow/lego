@@ -8,6 +8,7 @@ import brickBalanceRoutes  from"./routes/brick-balance-routes"
 import bricksRoutes  from"./routes/bricks-routes"
 import colorsRoutes  from"./routes/colors-routes"
 import authRoutes  from"./routes/auth"
+import { NotFoundError } from "@janciow1979/common"
 
 
 dotenv.config();
@@ -30,8 +31,6 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname + "/public"));
 
-
-
 app.get("/api", (req, res) => {
   res.status(200);
   res.json({ message: "ok ok " });
@@ -43,8 +42,12 @@ app.use("/api/bricks", bricksRoutes);
 app.use("/api/colors", colorsRoutes);
 app.use("/api/auth", authRoutes);
 
+app.all('*', async (req, res, next) => {
+  throw new NotFoundError();
+})
+
 app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
-  // console.log(error);
+  console.log(error);
   const status = 500 //error.statusCode || 500;
   const message = error.message;
   // const data = error.data ;
